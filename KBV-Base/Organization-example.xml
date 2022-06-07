@@ -1,0 +1,74 @@
+<Organization xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Organization|1.1.1" />
+  </meta>
+  <!-- BSNR -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="BSNR" />
+      </coding>
+    </type>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_BSNR" />
+    <value value="123456789" />
+  </identifier>
+  <!-- Institutionskennzeichen -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="XX" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/arge-ik/iknr" />
+    <value value="123456789" />
+  </identifier>
+  <!-- VKNR -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="NIIP" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/kbv/vknr" />
+    <value value="12345" />
+  </identifier>
+  <!-- KZV-Abrechnungsnummer -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+        <code value="ZANR" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/kzbv/zahnarztnummer" />
+    <value value="12345678" />
+  </identifier>
+  <name value="Praxis Dr. Mustermann" />
+  <address>
+    <type value="both" />
+    <line value="Musterstr. 1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="1" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Musterstr." />
+      </extension>
+    </line>
+    <city value="Darmstadt" />
+    <postalCode value="64283" />
+    <country value="D" />
+  </address>
+  <address>
+    <type value="postal" />
+    <line value="12345">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="12345" />
+      </extension>
+    </line>
+    <city value="Darmstadt" />
+    <country value="D" />
+  </address>
+</Organization>

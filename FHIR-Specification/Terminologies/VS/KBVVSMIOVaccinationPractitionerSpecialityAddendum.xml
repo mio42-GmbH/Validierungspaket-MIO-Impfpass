@@ -1,0 +1,68 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Practitioner_Speciality_Addendum" />
+  <version value="1.1.0" />
+  <name value="KBV_VS_MIO_Vaccination_Practitioner_Speciality_Addendum" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung" />
+  <description value="Dieses Valueset enthält Codes zur Beschreibung der Funktionen/Rollen der behandelnden Person." />
+  <immutable value="false" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20200731" />
+      <concept>
+        <code value="309343006" />
+        <display value="Physician (occupation)" />
+      </concept>
+    </include>
+    <include>
+      <system value="urn:oid:1.2.276.0.76.5.114" />
+      <concept>
+        <code value="042" />
+        <display value="SP Unfallchirurgie" />
+      </concept>
+      <concept>
+        <code value="096" />
+        <display value="TG Kindernephrologie" />
+      </concept>
+      <concept>
+        <code value="097" />
+        <display value="TG Kinder-Lungen- u. Bronchialheilkunde" />
+      </concept>
+      <concept>
+        <code value="140" />
+        <display value="FA Nervenheilkunde" />
+      </concept>
+      <concept>
+        <code value="143" />
+        <display value="Psychotherapeutisch tätiger Arzt" />
+      </concept>
+      <concept>
+        <code value="171" />
+        <display value="TG Neuropathologie" />
+      </concept>
+      <concept>
+        <code value="192" />
+        <display value="TG Neuroradiologie" />
+      </concept>
+      <concept>
+        <code value="160" />
+        <display value="FA Orthopädie" />
+      </concept>
+      <concept>
+        <code value="161" />
+        <display value="SP Rheumatologie" />
+      </concept>
+      <concept>
+        <code value="536" />
+        <display value="SP Kinder-Endokrinologie und -Diabetologie" />
+      </concept>
+      <concept>
+        <code value="537" />
+        <display value="SP Kinder-Gastroenterologie" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

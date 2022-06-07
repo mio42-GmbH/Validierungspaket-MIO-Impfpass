@@ -1,0 +1,474 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Condition" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_Vaccination_Condition" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Hinweis: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="sct-concept" />
+    <uri value="http://snomed.info/conceptdomain" />
+    <name value="SNOMED CT Concept Domain Binding" />
+  </mapping>
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="sct-attr" />
+    <uri value="http://snomed.org/attributebinding" />
+    <name value="SNOMED CT Attribute Binding" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Condition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Condition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Condition">
+      <path value="Condition" />
+      <short value="vorangegangenen / durchlebten Erkrankung / Infektionskrankheit" />
+      <definition value="Dieses Profil enthält alle Informationen zu einer vorangegangenen / durchlebten Erkrankung / Infektionskrankheit, die zu einer Immunität geführt hat. Die Immunität führt dazu, dass in der Regel keine Impfung notwendig ist." />
+      <comment value="Zu diesem Profil kann eine Provenance-Ressource angehängt werden." />
+      <constraint>
+        <key value="Cond1" />
+        <severity value="error" />
+        <human value="Das Dokumentationsdatum muss mindestens mit TT.MM.JJJJ angegeben werden" />
+        <expression value="recordedDate.toString().length()&gt;=10" />
+        <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Condition" />
+      </constraint>
+    </element>
+    <element id="Condition.meta">
+      <path value="Condition.meta" />
+      <min value="1" />
+    </element>
+    <element id="Condition.meta.versionId">
+      <path value="Condition.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Condition.meta.lastUpdated">
+      <path value="Condition.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Condition.meta.source">
+      <path value="Condition.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Condition.meta.profile">
+      <path value="Condition.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Condition|1.1.0" />
+    </element>
+    <element id="Condition.meta.security">
+      <path value="Condition.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Condition.meta.tag">
+      <path value="Condition.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Condition.implicitRules">
+      <path value="Condition.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Condition.language">
+      <path value="Condition.language" />
+      <max value="0" />
+    </element>
+    <element id="Condition.contained">
+      <path value="Condition.contained" />
+      <max value="0" />
+    </element>
+    <element id="Condition.identifier">
+      <path value="Condition.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Condition.clinicalStatus">
+      <path value="Condition.clinicalStatus" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.clinicalStatus.coding">
+      <path value="Condition.clinicalStatus.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.clinicalStatus.coding.system">
+      <path value="Condition.clinicalStatus.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/condition-clinical" />
+    </element>
+    <element id="Condition.clinicalStatus.coding.code">
+      <path value="Condition.clinicalStatus.coding.code" />
+      <min value="1" />
+      <fixedCode value="resolved" />
+    </element>
+    <element id="Condition.clinicalStatus.text">
+      <path value="Condition.clinicalStatus.text" />
+      <max value="0" />
+    </element>
+    <element id="Condition.verificationStatus">
+      <path value="Condition.verificationStatus" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.verificationStatus.coding">
+      <path value="Condition.verificationStatus.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.verificationStatus.coding.system">
+      <path value="Condition.verificationStatus.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/condition-ver-status" />
+    </element>
+    <element id="Condition.verificationStatus.coding.code">
+      <path value="Condition.verificationStatus.coding.code" />
+      <min value="1" />
+      <fixedCode value="confirmed" />
+    </element>
+    <element id="Condition.verificationStatus.coding.userSelected">
+      <path value="Condition.verificationStatus.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Condition.verificationStatus.text">
+      <path value="Condition.verificationStatus.text" />
+      <max value="0" />
+    </element>
+    <element id="Condition.category">
+      <path value="Condition.category" />
+      <max value="0" />
+    </element>
+    <element id="Condition.severity">
+      <path value="Condition.severity" />
+      <max value="0" />
+    </element>
+    <element id="Condition.code">
+      <path value="Condition.code" />
+      <short value="Diagnosecode" />
+      <definition value="Dieses Element beschreibt die durchgemachte Infektionskrankheit, die zu einer Immunität führt. Enthalten ist die Bezeichnung der Erkrankung mit der entsprechenden Codierung." />
+      <comment value="Ist es notwendig eine hier nicht aufgeführte (unspezifizierte) Erkrankung zu dokumentieren, ist der entsprechende Code auszuwählen. Es sollte eine nähere Beschreibung als Freitext in der note (Diagnoseerläuterung) erfolgen." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding">
+      <path value="Condition.code.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:snomed_CT">
+      <path value="Condition.code.coding" />
+      <sliceName value="snomed_CT" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Prior_Disease|1.1.0" />
+      </binding>
+    </element>
+    <element id="Condition.code.coding:snomed_CT.system">
+      <path value="Condition.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:snomed_CT.version">
+      <path value="Condition.code.coding.version" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:snomed_CT.code">
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:snomed_CT.display">
+      <path value="Condition.code.coding.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:snomed_CT.display.extension">
+      <path value="Condition.code.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.code.coding:snomed_CT.display.extension:anzeigenameCodeSnomed">
+      <path value="Condition.code.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German|1.1.1" />
+      </type>
+    </element>
+    <element id="Condition.code.coding:snomed_CT.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Condition.code.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.code.coding:snomed_CT.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Condition.code.coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="Condition.code.coding:snomed_CT.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Condition.code.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <definition value="In diesem Attribut sollen die entsprechende deutsche Bezeichnung des Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall den Displaynamen des Targetsystems aus KBV_CM_MIO_Vaccination_Prior_Disease_German" />
+    </element>
+    <element id="Condition.code.coding:snomed_CT.userSelected">
+      <path value="Condition.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Condition.code.coding:icd-10-gm">
+      <path value="Condition.code.coding" />
+      <sliceName value="icd-10-gm" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Prior_Disease_ICD|1.1.0" />
+      </binding>
+    </element>
+    <element id="Condition.code.coding:icd-10-gm.system">
+      <path value="Condition.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd-10-gm.version">
+      <path value="Condition.code.coding.version" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd-10-gm.code">
+      <path value="Condition.code.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd-10-gm.display">
+      <path value="Condition.code.coding.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.code.coding:icd-10-gm.userSelected">
+      <path value="Condition.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Condition.code.text">
+      <path value="Condition.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Condition.bodySite">
+      <path value="Condition.bodySite" />
+      <max value="0" />
+    </element>
+    <element id="Condition.subject">
+      <path value="Condition.subject" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.subject.reference">
+      <path value="Condition.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.subject.type">
+      <path value="Condition.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="Condition.subject.identifier">
+      <path value="Condition.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Condition.subject.display">
+      <path value="Condition.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Condition.encounter">
+      <path value="Condition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Condition.onset[x]">
+      <path value="Condition.onset[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]:onsetString">
+      <path value="Condition.onset[x]" />
+      <sliceName value="onsetString" />
+      <type>
+        <code value="string" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension">
+      <path value="Condition.onset[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase">
+      <path value="Condition.onset[x].extension" />
+      <sliceName value="lebensphase" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Age_Groups|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase.value[x]:valueCodeableConcept">
+      <path value="Condition.onset[x].extension.value[x]" />
+      <sliceName value="valueCodeableConcept" />
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase.value[x]:valueCodeableConcept.coding.system">
+      <path value="Condition.onset[x].extension.value[x].coding.system" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase.value[x]:valueCodeableConcept.coding.version">
+      <path value="Condition.onset[x].extension.value[x].coding.version" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase.value[x]:valueCodeableConcept.coding.code">
+      <path value="Condition.onset[x].extension.value[x].coding.code" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase.value[x]:valueCodeableConcept.coding.display">
+      <path value="Condition.onset[x].extension.value[x].coding.display" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase.value[x]:valueCodeableConcept.coding.display.extension">
+      <path value="Condition.onset[x].extension.value[x].coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Condition.onset[x]:onsetString.extension:lebensphase.value[x]:valueCodeableConcept.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Condition.onset[x].extension.value[x].coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Condition.abatement[x]">
+      <path value="Condition.abatement[x]" />
+      <max value="0" />
+    </element>
+    <element id="Condition.recordedDate">
+      <path value="Condition.recordedDate" />
+      <short value="Dokumentationsdatum" />
+      <definition value="Zeitpunkt, an dem eine Krankheit z. B. durch eine ärztlich tätige Person in diesem Eintrag dokumentiert wurde. Hinweis: Wenn zwischen Feststellung der Diagnose und Dokumentationsdatum nicht unterschieden werden muss, ist das Datum der Feststellung der Diagnose (Diagnosedatum) anzugeben." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.recorder">
+      <path value="Condition.recorder" />
+      <short value="Eintragende Person" />
+      <definition value="Diese Person hat den Eintrag im digitalen Impfpass getätigt." />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.recorder.reference">
+      <path value="Condition.recorder.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.recorder.type">
+      <path value="Condition.recorder.type" />
+      <max value="0" />
+    </element>
+    <element id="Condition.recorder.identifier">
+      <path value="Condition.recorder.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Condition.recorder.display">
+      <path value="Condition.recorder.display" />
+      <max value="0" />
+    </element>
+    <element id="Condition.asserter">
+      <path value="Condition.asserter" />
+      <max value="0" />
+    </element>
+    <element id="Condition.stage">
+      <path value="Condition.stage" />
+      <max value="0" />
+    </element>
+    <element id="Condition.evidence">
+      <path value="Condition.evidence" />
+      <max value="0" />
+    </element>
+    <element id="Condition.note">
+      <path value="Condition.note" />
+      <short value="Diagnoseerläuterung" />
+      <definition value="Damit soll dem Arzt die Möglichkeit gegeben werden evt. nähere Angaben zu einer Diagnose in Form von Freitext zu machen" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Condition.note.author[x]">
+      <path value="Condition.note.author[x]" />
+      <max value="0" />
+    </element>
+    <element id="Condition.note.time">
+      <path value="Condition.note.time" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

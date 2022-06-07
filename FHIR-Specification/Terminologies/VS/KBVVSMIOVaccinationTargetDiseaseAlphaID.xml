@@ -1,0 +1,160 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease_AlphaID" />
+  <version value="1.1.0" />
+  <name value="KBV_VS_MIO_Vaccination_TargetDisease_AlphaID" />
+  <title value="TargetDisease_Alpha ID" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Dieses Valueset enthält die Codes zur Beschreibung der Krankheiten gegen die geimpft wird als Alpha-ID Code." />
+  <immutable value="false" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/dimdi/alpha-id" />
+      <version value="2021" />
+      <concept>
+        <code value="I130800" />
+        <display value="COVID-19 o.n.A." />
+      </concept>
+      <concept>
+        <code value="I13550" />
+        <display value="Brucellose" />
+      </concept>
+      <concept>
+        <code value="I13965" />
+        <display value="Fleckfieber" />
+      </concept>
+      <concept>
+        <code value="I109141" />
+        <display value="Rh-Unverträglichkeit bei Schwangerschaft" />
+      </concept>
+      <concept>
+        <code value="I130677" />
+        <display value="Zytomegalieviren-Infektion" />
+      </concept>
+      <concept>
+        <code value="I130678" />
+        <display value="Respiratory-Syncytial-Viren-Infektion" />
+      </concept>
+      <concept>
+        <code value="I130668" />
+        <display value="Clostridioides-difficile-Infektion" />
+      </concept>
+      <concept>
+        <code value="I130674" />
+        <display value="Haemophilus-influenzae-Typ-B-Infektion" />
+      </concept>
+      <concept>
+        <code value="I13614" />
+        <display value="Cholera" />
+      </concept>
+      <concept>
+        <code value="I130676" />
+        <display value="HPV [Humanes Papillomavirus]-Infektion" />
+      </concept>
+      <concept>
+        <code value="I130671" />
+        <display value="Meningokokken-Infektion" />
+      </concept>
+      <concept>
+        <code value="I15008" />
+        <display value="Pest" />
+      </concept>
+      <concept>
+        <code value="I14609" />
+        <display value="Masern" />
+      </concept>
+      <concept>
+        <code value="I23502" />
+        <display value="Diphtherie" />
+      </concept>
+      <concept>
+        <code value="I23483" />
+        <display value="FSME [Zentraleuropäische Frühsommer-Meningoenzephalitis]" />
+      </concept>
+      <concept>
+        <code value="I14036" />
+        <display value="Gelbfieber" />
+      </concept>
+      <concept>
+        <code value="I15771" />
+        <display value="Hepatitis A" />
+      </concept>
+      <concept>
+        <code value="I15777" />
+        <display value="Hepatitis B" />
+      </concept>
+      <concept>
+        <code value="I23144" />
+        <display value="Herpes zoster" />
+      </concept>
+      <concept>
+        <code value="I14083" />
+        <display value="Grippe [Influenza]" />
+      </concept>
+      <concept>
+        <code value="I1064" />
+        <display value="Japanische Enzephalitis" />
+      </concept>
+      <concept>
+        <code value="I14685" />
+        <display value="Milzbrand" />
+      </concept>
+      <concept>
+        <code value="I14707" />
+        <display value="Mumps" />
+      </concept>
+      <concept>
+        <code value="I14368" />
+        <display value="Pertussis" />
+      </concept>
+      <concept>
+        <code value="I130672" />
+        <display value="Pneumokokken-Infektion" />
+      </concept>
+      <concept>
+        <code value="I15064" />
+        <display value="Pocken" />
+      </concept>
+      <concept>
+        <code value="I14372" />
+        <display value="Poliomyelitis" />
+      </concept>
+      <concept>
+        <code value="I130669" />
+        <display value="Rotaviren-Infektion" />
+      </concept>
+      <concept>
+        <code value="I15222" />
+        <display value="Röteln" />
+      </concept>
+      <concept>
+        <code value="I15432" />
+        <display value="Tetanus-Infektion" />
+      </concept>
+      <concept>
+        <code value="I22407" />
+        <display value="Tollwut" />
+      </concept>
+      <concept>
+        <code value="I22433" />
+        <display value="Tuberkulose" />
+      </concept>
+      <concept>
+        <code value="I22454" />
+        <display value="Typhus" />
+      </concept>
+      <concept>
+        <code value="I15579" />
+        <display value="Windpocken" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

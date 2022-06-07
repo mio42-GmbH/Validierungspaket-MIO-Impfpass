@@ -1,0 +1,625 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Prime" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_Vaccination_Composition_Prime" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="fhirdocumentreference" />
+    <uri value="http://hl7.org/fhir/documentreference" />
+    <name value="FHIR DocumentReference" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Composition" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Composition" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Composition">
+      <path value="Composition" />
+      <short value="Übersichtsdokument im Szenario Daten eintragen" />
+      <definition value="Dieses Profil dient als Übersichtsdokument. Es kann als eine Art Inhaltsverzeichnis des digitalen Dokumentes verstanden werden. Die zu dem Dokument Impfpass passenden Inhalte sind dort auf oberster Ebene beschrieben.&#xD;&#xA;Dieses Profil behandelt das Szenario Daten eintragen." />
+    </element>
+    <element id="Composition.meta">
+      <path value="Composition.meta" />
+      <min value="1" />
+    </element>
+    <element id="Composition.meta.versionId">
+      <path value="Composition.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.lastUpdated">
+      <path value="Composition.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.source">
+      <path value="Composition.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.profile">
+      <path value="Composition.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Prime|1.1.0" />
+    </element>
+    <element id="Composition.meta.security">
+      <path value="Composition.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Composition.meta.tag">
+      <path value="Composition.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Composition.implicitRules">
+      <path value="Composition.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Composition.language">
+      <path value="Composition.language" />
+      <max value="0" />
+    </element>
+    <element id="Composition.text">
+      <path value="Composition.text" />
+    </element>
+    <element id="Composition.text.status">
+      <path value="Composition.text.status" />
+      <fixedCode value="extensions" />
+    </element>
+    <element id="Composition.contained">
+      <path value="Composition.contained" />
+      <max value="0" />
+    </element>
+    <element id="Composition.identifier">
+      <path value="Composition.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.status">
+      <path value="Composition.status" />
+      <fixedCode value="final" />
+    </element>
+    <element id="Composition.type">
+      <path value="Composition.type" />
+      <definition value="Code aus dem Profil IHE Immunization Content (IC) zur Beschreibung der History of Immunization" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.type.coding">
+      <path value="Composition.type.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.type.coding.system">
+      <path value="Composition.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://loinc.org" />
+    </element>
+    <element id="Composition.type.coding.code">
+      <path value="Composition.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="11369-6" />
+    </element>
+    <element id="Composition.type.coding.display">
+      <path value="Composition.type.coding.display" />
+      <min value="1" />
+      <fixedString value="History of Immunization Narrative" />
+    </element>
+    <element id="Composition.type.coding.userSelected">
+      <path value="Composition.type.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.type.text">
+      <path value="Composition.type.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.category">
+      <path value="Composition.category" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject">
+      <path value="Composition.subject" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.reference">
+      <path value="Composition.subject.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.subject.type">
+      <path value="Composition.subject.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject.identifier">
+      <path value="Composition.subject.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.subject.display">
+      <path value="Composition.subject.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.encounter">
+      <path value="Composition.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Composition.date">
+      <path value="Composition.date" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author">
+      <path value="Composition.author" />
+      <short value="Eintragende Person" />
+      <definition value="Die Person, die den Eintrag der Impfung erstellt hat. Sollte keine eintragende Person vorhanden sein, so kann die Nullflavor-Extension genutzt werden." />
+      <max value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.extension">
+      <path value="Composition.author.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.author.extension:data-absent-reason">
+      <path value="Composition.author.extension" />
+      <sliceName value="data-absent-reason" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
+    <element id="Composition.author.extension:data-absent-reason.value[x]">
+      <path value="Composition.author.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Composition.author.extension:data-absent-reason.value[x]:valueCode">
+      <path value="Composition.author.extension.value[x]" />
+      <sliceName value="valueCode" />
+    </element>
+    <element id="Composition.author.reference">
+      <path value="Composition.author.reference" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.author.type">
+      <path value="Composition.author.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.identifier">
+      <path value="Composition.author.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.author.display">
+      <path value="Composition.author.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.confidentiality">
+      <path value="Composition.confidentiality" />
+      <max value="0" />
+    </element>
+    <element id="Composition.attester">
+      <path value="Composition.attester" />
+      <max value="0" />
+    </element>
+    <element id="Composition.custodian">
+      <path value="Composition.custodian" />
+      <max value="0" />
+    </element>
+    <element id="Composition.relatesTo">
+      <path value="Composition.relatesTo" />
+      <max value="0" />
+    </element>
+    <element id="Composition.event">
+      <path value="Composition.event" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section">
+      <path value="Composition.section" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="code.coding.code" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Record_Prime">
+      <path value="Composition.section" />
+      <sliceName value="Record_Prime" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Record_Prime.title">
+      <path value="Composition.section.title" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Record_Prime.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Record_Prime.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Record_Prime.code.coding.version">
+      <path value="Composition.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210131" />
+    </element>
+    <element id="Composition.section:Record_Prime.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="713404003" />
+    </element>
+    <element id="Composition.section:Record_Prime.code.coding.display">
+      <path value="Composition.section.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Vaccination given (situation)" />
+    </element>
+    <element id="Composition.section:Record_Prime.code.coding.userSelected">
+      <path value="Composition.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.code.text">
+      <path value="Composition.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0" />
+      </type>
+    </element>
+    <element id="Composition.section:Record_Prime.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Record_Prime.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Record_Prime.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation">
+      <path value="Composition.section" />
+      <sliceName value="Observation" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Observation.title">
+      <path value="Composition.section.title" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.code">
+      <path value="Composition.section.code" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Observation.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:Observation.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Observation.code.coding.version">
+      <path value="Composition.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210131" />
+    </element>
+    <element id="Composition.section:Observation.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="243796009:363589002=121258006" />
+    </element>
+    <element id="Composition.section:Observation.code.coding.display">
+      <path value="Composition.section.code.coding.display" />
+      <min value="1" />
+      <fixedString value="Situation with explicit context (situation) : Associated procedure (attribute) = Procedure to identify antibody (procedure)" />
+    </element>
+    <element id="Composition.section:Observation.code.coding.userSelected">
+      <path value="Composition.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.code.text">
+      <path value="Composition.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Observation_Immunization_Status|1.1.0" />
+      </type>
+    </element>
+    <element id="Composition.section:Observation.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Observation.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Observation.section">
+      <path value="Composition.section.section" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition">
+      <path value="Composition.section" />
+      <sliceName value="Condition" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Composition.section:Condition.title">
+      <path value="Composition.section.title" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.code">
+      <path value="Composition.section.code" />
+      <definition value="Möglicherweise noch ändern auf IHE IC&#xD;&#xA;11450-4 R PROBLEM LIST&#xD;&#xA;11348-0 R HISTORY OF PAST ILLNESS&#xD;&#xA;&#xD;&#xA;MEDCCAT http://terminology.hl7.org/CodeSystem/v3-ActCode" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Condition.code.coding">
+      <path value="Composition.section.code.coding" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Composition.section:Condition.code.coding.system">
+      <path value="Composition.section.code.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+    </element>
+    <element id="Composition.section:Condition.code.coding.version">
+      <path value="Composition.section.code.coding.version" />
+      <min value="1" />
+      <fixedString value="http://snomed.info/sct/900000000000207008/version/20210131" />
+    </element>
+    <element id="Composition.section:Condition.code.coding.code">
+      <path value="Composition.section.code.coding.code" />
+      <min value="1" />
+      <fixedCode value="161413004:363589002=35123003" />
+    </element>
+    <element id="Composition.section:Condition.code.coding.display">
+      <path value="Composition.section.code.coding.display" />
+      <min value="1" />
+      <fixedString value="History of infectious disease (situation) : Associated procedure (attribute) = Active immunity, function (observable entity)" />
+    </element>
+    <element id="Composition.section:Condition.code.coding.userSelected">
+      <path value="Composition.section.code.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.code.text">
+      <path value="Composition.section.code.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.author">
+      <path value="Composition.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.focus">
+      <path value="Composition.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.text">
+      <path value="Composition.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.mode">
+      <path value="Composition.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.orderedBy">
+      <path value="Composition.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.entry">
+      <path value="Composition.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Condition|1.1.0" />
+      </type>
+    </element>
+    <element id="Composition.section:Condition.entry.reference">
+      <path value="Composition.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Condition.entry.type">
+      <path value="Composition.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.entry.identifier">
+      <path value="Composition.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.entry.display">
+      <path value="Composition.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.emptyReason">
+      <path value="Composition.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section">
+      <path value="Composition.section.section" />
+      <short value="Provenance" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Condition.section.title">
+      <path value="Composition.section.section.title" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.code">
+      <path value="Composition.section.section.code" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.author">
+      <path value="Composition.section.section.author" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.focus">
+      <path value="Composition.section.section.focus" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.text">
+      <path value="Composition.section.section.text" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.mode">
+      <path value="Composition.section.section.mode" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.orderedBy">
+      <path value="Composition.section.section.orderedBy" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.entry">
+      <path value="Composition.section.section.entry" />
+      <min value="1" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Provenance|1.1.0" />
+      </type>
+    </element>
+    <element id="Composition.section:Condition.section.entry.reference">
+      <path value="Composition.section.section.entry.reference" />
+      <min value="1" />
+    </element>
+    <element id="Composition.section:Condition.section.entry.type">
+      <path value="Composition.section.section.entry.type" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.entry.identifier">
+      <path value="Composition.section.section.entry.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.entry.display">
+      <path value="Composition.section.section.entry.display" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.emptyReason">
+      <path value="Composition.section.section.emptyReason" />
+      <max value="0" />
+    </element>
+    <element id="Composition.section:Condition.section.section">
+      <path value="Composition.section.section.section" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,61 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="identifier-pid" />
+  <url value="http://fhir.de/StructureDefinition/identifier-pid" />
+  <version value="0.9.12" />
+  <name value="IdentifierPid" />
+  <title value="Identifier-Profil für die Abbildung einer Patienten-ID" />
+  <status value="draft" />
+  <date value="2019-07-06" />
+  <description value="Identifier-Profil für die Abbildung einer organisationsspezifischen Patienten-ID" />
+  <fhirVersion value="4.0.1" />
+  <kind value="complex-type" />
+  <abstract value="false" />
+  <type value="Identifier" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Identifier" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Identifier.use">
+      <path value="Identifier.use" />
+      <fixedCode value="usual" />
+    </element>
+    <element id="Identifier.type">
+      <path value="Identifier.type" />
+      <min value="1" />
+    </element>
+    <element id="Identifier.type.coding">
+      <path value="Identifier.type.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Identifier.type.coding:MR-Type">
+      <path value="Identifier.type.coding" />
+      <sliceName value="MR-Type" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Identifier.type.coding:MR-Type.system">
+      <path value="Identifier.type.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+    </element>
+    <element id="Identifier.type.coding:MR-Type.code">
+      <path value="Identifier.type.coding.code" />
+      <min value="1" />
+      <fixedCode value="MR" />
+    </element>
+    <element id="Identifier.system">
+      <path value="Identifier.system" />
+      <min value="1" />
+    </element>
+    <element id="Identifier.value">
+      <path value="Identifier.value" />
+      <min value="1" />
+    </element>
+  </differential>
+</StructureDefinition>

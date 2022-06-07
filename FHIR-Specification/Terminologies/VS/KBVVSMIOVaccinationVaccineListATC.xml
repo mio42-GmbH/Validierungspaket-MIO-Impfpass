@@ -1,0 +1,1137 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List_ATC" />
+  <version value="1.1.0" />
+  <name value="KBV_VS_MIO_Vaccination_Vaccine_List_ATC" />
+  <title value="Vaccine_ATC" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Dieses Valueset enthält die Codes zur Beschreibung der Impfstoffe als ATC Code" />
+  <immutable value="false" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <compose>
+    <include>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <concept>
+        <code value="J07AR" />
+        <display value="Typhus (exanthematicus)-Impfstoff" />
+      </concept>
+      <concept>
+        <code value="J07AR01" />
+        <display value="Typhus exanthematicus, inaktiviert, ganze Zelle" />
+      </concept>
+      <concept>
+        <code value="J07AC" />
+        <display value="Milzbrand-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AC01" />
+        <display value="Anthrax-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AD" />
+        <display value="Brucellose-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AD01" />
+        <display value="Brucella-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AE" />
+        <display value="Cholera-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AE01" />
+        <display value="Cholera, inaktiviert, ganze Zelle" />
+      </concept>
+      <concept>
+        <code value="J07AE02" />
+        <display value="Cholera, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07AE51" />
+        <display value="Cholera, Kombinationen mit Typhus-Impfstoff,  inaktiviert, ganze Zelle" />
+      </concept>
+      <concept>
+        <code value="J07AF" />
+        <display value="Diphtherie-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AF01" />
+        <display value="Diphtherie-Toxoid" />
+      </concept>
+      <concept>
+        <code value="J07AG" />
+        <display value="Haemophilus influenzae B-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AG01" />
+        <display value="Haemophilus influenzae B, gereinigtes Antigen konjugiert" />
+      </concept>
+      <concept>
+        <code value="J07AG51" />
+        <display value="Haemophilus influenzae B, Kombinationen mit Toxoiden" />
+      </concept>
+      <concept>
+        <code value="J07AG52" />
+        <display value="Haemophilus influenzae B, Kombinationen mit Pertussis und Toxoiden" />
+      </concept>
+      <concept>
+        <code value="J07AG53" />
+        <display value="Haemophilus influenzae B, Kombinationen mit  Meningokokken C, konjugiert" />
+      </concept>
+      <concept>
+        <code value="J07AH" />
+        <display value="Meningokokken-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AH01" />
+        <display value="Meningokokken A, gereinigtes Polysaccharid-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AH02" />
+        <display value="Andere Meningokokken monovalent,  gereinigtes Polysaccharid-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AH03" />
+        <display value="Meningokokken bivalent (A, C),  gereinigtes Polysaccharid-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AH04" />
+        <display value="Meningokokken tetravalent (A, C, Y, W-135),  gereinigtes Polysaccharid-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AH05" />
+        <display value="Andere Meningokokken polyvalent,  gereinigtes Polysaccharid-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AH06" />
+        <display value="Meningokokken B, äußere Vesikelmembran-Impfstoff" />
+      </concept>
+      <concept>
+        <code value="J07AH07" />
+        <display value="Meningokokken C, gereinigtes Polysaccharid-Antigen,  konjugiert" />
+      </concept>
+      <concept>
+        <code value="J07AH08" />
+        <display value="Meningokokken tetravalent (A, C, Y, W-135),  gereinigtes Polysaccharid-Antigen, konjugiert" />
+      </concept>
+      <concept>
+        <code value="J07AH09" />
+        <display value="Meningokokken B, Multikomponenten-Impfstoff" />
+      </concept>
+      <concept>
+        <code value="J07AH10" />
+        <display value="Meningokokken A, gereinigtes Polysaccharid-Antigen,  konjugiert" />
+      </concept>
+      <concept>
+        <code value="J07AJ" />
+        <display value="Pertussis-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AJ01" />
+        <display value="Pertussis, inaktiviert, ganze Zelle" />
+      </concept>
+      <concept>
+        <code value="J07AJ02" />
+        <display value="Pertussis, gereinigtes Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AJ51" />
+        <display value="Pertussis, inaktiviert, ganze Zelle, Kombinationen mit Toxoiden" />
+      </concept>
+      <concept>
+        <code value="J07AJ52" />
+        <display value="Pertussis, gereinigtes Antigen, Kombinationen mit Toxoiden" />
+      </concept>
+      <concept>
+        <code value="J07AK" />
+        <display value="Pest-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AK01" />
+        <display value="Pest, inaktiviert, ganze Zelle" />
+      </concept>
+      <concept>
+        <code value="J07AL" />
+        <display value="Pneumokokken-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AL01" />
+        <display value="Pneumokokken, gereinigtes Polysaccharid-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AL02" />
+        <display value="Pneumokokken, gereinigtes Polysaccharid-Antigen, konjugiert" />
+      </concept>
+      <concept>
+        <code value="J07AL52" />
+        <display value="Pneumokokken, gereinigtes Polysaccharid-Antigen  und Haemophilus influenzae B, konjugiert" />
+      </concept>
+      <concept>
+        <code value="J07AM" />
+        <display value="Tetanus-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AM01" />
+        <display value="Tetanus-Toxoid" />
+      </concept>
+      <concept>
+        <code value="J07AM51" />
+        <display value="Tetanus-Toxoid, Kombinationen mit Diphtherie-Toxoid" />
+      </concept>
+      <concept>
+        <code value="J07AM52" />
+        <display value="Tetanus-Toxoid, Kombinationen mit Tetanus-Immunglobulin" />
+      </concept>
+      <concept>
+        <code value="J07AN" />
+        <display value="Tuberkulose-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AN01" />
+        <display value="Tuberkulose, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07AP" />
+        <display value="Typhus-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07AP01" />
+        <display value="Typhus, oral, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07AP02" />
+        <display value="Typhus, inaktiviert, ganze Zelle" />
+      </concept>
+      <concept>
+        <code value="J07AP03" />
+        <display value="Typhus, gereinigtes Polysaccharid-Antigen" />
+      </concept>
+      <concept>
+        <code value="J07AP10" />
+        <display value="Typhus, Kombinationen mit Paratyphustypen" />
+      </concept>
+      <concept>
+        <code value="J07BA" />
+        <display value="Encephalitis-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BA01" />
+        <display value="FSME, inaktiviert, ganzes Virus" />
+      </concept>
+      <concept>
+        <code value="J07BA02" />
+        <display value="Encephalitis, japanische, inaktiviert, ganzes Virus" />
+      </concept>
+      <concept>
+        <code value="J07BA03" />
+        <display value="Encephalitis, japanische, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BB" />
+        <display value="Influenza-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BB01" />
+        <display value="Influenza, inaktiviert, ganzes Virus" />
+      </concept>
+      <concept>
+        <code value="J07BB02" />
+        <display value="Influenza, inaktiviert, Spaltvirus oder Oberflächenantigen" />
+      </concept>
+      <concept>
+        <code value="J07BB03" />
+        <display value="Influenza, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BC" />
+        <display value="Hepatitis-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BC01" />
+        <display value="Hepatitis B, gereinigtes Antigen" />
+      </concept>
+      <concept>
+        <code value="J07BC02" />
+        <display value="Hepatitis A, inaktiviert, ganzes Virus" />
+      </concept>
+      <concept>
+        <code value="J07BC03" />
+        <display value="Hepatitis A, gereinigtes Antigen" />
+      </concept>
+      <concept>
+        <code value="J07BC20" />
+        <display value="Kombinationen" />
+      </concept>
+      <concept>
+        <code value="J07BD" />
+        <display value="Masern-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BD01" />
+        <display value="Masern, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BD51" />
+        <display value="Masern, Kombinationen mit Mumps, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BD52" />
+        <display value="Masern, Kombinationen mit Mumps und Röteln,  lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BD53" />
+        <display value="Masern, Kombinationen mit Röteln, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BD54" />
+        <display value="Masern, Kombinationen mit Mumps, Röteln und Varicella,  lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BE" />
+        <display value="Mumps-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BE01" />
+        <display value="Mumps, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BF" />
+        <display value="Poliomyelitis-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BF01" />
+        <display value="Poliomyelitis, oral, monovalent, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BF02" />
+        <display value="Poliomyelitis, oral, trivalent, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BF03" />
+        <display value="Poliomyelitis, trivalent, inaktiviert, ganzes Virus" />
+      </concept>
+      <concept>
+        <code value="J07BF04" />
+        <display value="Poliomyelitis, oral, bivalent, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BG" />
+        <display value="Tollwut-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BG01" />
+        <display value="Tollwut, inaktiviert, ganzes Virus" />
+      </concept>
+      <concept>
+        <code value="J07BH" />
+        <display value="Rotavirus-Diarrhoe-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BH01" />
+        <display value="Rotavirus, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BH02" />
+        <display value="Rotavirus, pentavalent, lebend, Reassortanten" />
+      </concept>
+      <concept>
+        <code value="J07BJ" />
+        <display value="Röteln-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BJ01" />
+        <display value="Röteln, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BJ51" />
+        <display value="Röteln, Kombinationen mit Mumps, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BK" />
+        <display value="Varicella Zoster Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BK01" />
+        <display value="Varicella, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BK02" />
+        <display value="Zoster Virus, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BK03" />
+        <display value="Zoster Virus, gereinigtes Antigen" />
+      </concept>
+      <concept>
+        <code value="J07BL" />
+        <display value="Gelbfieber-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BL01" />
+        <display value="Gelbfieber, lebend abgeschwächt" />
+      </concept>
+      <concept>
+        <code value="J07BM" />
+        <display value="Papillomvirus-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BM01" />
+        <display value="Humaner-Papillomvirus-Impfstoff (Typen 6,11,16,18)" />
+      </concept>
+      <concept>
+        <code value="J07BM02" />
+        <display value="Humaner-Papillomvirus-Impfstoff (Typen 16,18)" />
+      </concept>
+      <concept>
+        <code value="J07BM03" />
+        <display value="Humaner-Papillomvirus-Impfstoff  (Typen 6,11,16,18,31,33,45,52,58)" />
+      </concept>
+      <concept>
+        <code value="J07BX" />
+        <display value="Andere virale Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07BX01" />
+        <display value="Pocken-Impfstoff, lebend, modifiziert" />
+      </concept>
+      <concept>
+        <code value="J07BX03" />
+        <display value="Covid-19-Impfstoffe" />
+      </concept>
+      <concept>
+        <code value="J07CA" />
+        <display value="Bakterielle und virale Impfstoffe, kombiniert" />
+      </concept>
+      <concept>
+        <code value="J07CA01" />
+        <display value="Diphtherie-Poliomyelitis-Tetanus" />
+      </concept>
+      <concept>
+        <code value="J07CA02" />
+        <display value="Diphtherie-Pertussis-Poliomyelitis-Tetanus" />
+      </concept>
+      <concept>
+        <code value="J07CA03" />
+        <display value="Diphtherie-Röteln-Tetanus" />
+      </concept>
+      <concept>
+        <code value="J07CA04" />
+        <display value="Haemophilus influenzae B und Poliomyelitis" />
+      </concept>
+      <concept>
+        <code value="J07CA05" />
+        <display value="Diphtherie-Hepatitis B-Pertussis-Tetanus" />
+      </concept>
+      <concept>
+        <code value="J07CA06" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Poliomyelitis-Tetanus" />
+      </concept>
+      <concept>
+        <code value="J07CA07" />
+        <display value="Diphtherie-Hepatitis B-Tetanus" />
+      </concept>
+      <concept>
+        <code value="J07CA08" />
+        <display value="Haemophilus influenzae B und Hepatitis B" />
+      </concept>
+      <concept>
+        <code value="J07CA09" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+      </concept>
+      <concept>
+        <code value="J07CA10" />
+        <display value="Typhus-Hepatitis A" />
+      </concept>
+      <concept>
+        <code value="J07CA11" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B" />
+      </concept>
+      <concept>
+        <code value="J07CA12" />
+        <display value="Diphtherie-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+      </concept>
+      <concept>
+        <code value="J07CA13" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B-Meningokokken  A + C" />
+      </concept>
+    </include>
+  </compose>
+  <expansion>
+    <timestamp value="2021-01-22T12:30:02Z" />
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AR" />
+      <display value="Typhus (exanthematicus)-Impfstoff" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AR01" />
+      <display value="Typhus exanthematicus, inaktiviert, ganze Zelle" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AC" />
+      <display value="Milzbrand-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AC01" />
+      <display value="Anthrax-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AD" />
+      <display value="Brucellose-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AD01" />
+      <display value="Brucella-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AE" />
+      <display value="Cholera-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AE01" />
+      <display value="Cholera, inaktiviert, ganze Zelle" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AE02" />
+      <display value="Cholera, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AE51" />
+      <display value="Cholera, Kombinationen mit Typhus-Impfstoff,  inaktiviert, ganze Zelle" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AF" />
+      <display value="Diphtherie-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AF01" />
+      <display value="Diphtherie-Toxoid" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AG" />
+      <display value="Haemophilus influenzae B-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AG01" />
+      <display value="Haemophilus influenzae B, gereinigtes Antigen konjugiert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AG51" />
+      <display value="Haemophilus influenzae B, Kombinationen mit Toxoiden" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AG52" />
+      <display value="Haemophilus influenzae B, Kombinationen mit Pertussis und Toxoiden" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AG53" />
+      <display value="Haemophilus influenzae B, Kombinationen mit  Meningokokken C, konjugiert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH" />
+      <display value="Meningokokken-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH01" />
+      <display value="Meningokokken A, gereinigtes Polysaccharid-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH02" />
+      <display value="Andere Meningokokken monovalent,  gereinigtes Polysaccharid-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH03" />
+      <display value="Meningokokken bivalent (A, C),  gereinigtes Polysaccharid-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH04" />
+      <display value="Meningokokken tetravalent (A, C, Y, W-135),  gereinigtes Polysaccharid-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH05" />
+      <display value="Andere Meningokokken polyvalent,  gereinigtes Polysaccharid-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH06" />
+      <display value="Meningokokken B, äußere Vesikelmembran-Impfstoff" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH07" />
+      <display value="Meningokokken C, gereinigtes Polysaccharid-Antigen,  konjugiert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH08" />
+      <display value="Meningokokken tetravalent (A, C, Y, W-135),  gereinigtes Polysaccharid-Antigen, konjugiert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH09" />
+      <display value="Meningokokken B, Multikomponenten-Impfstoff" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AH10" />
+      <display value="Meningokokken A, gereinigtes Polysaccharid-Antigen,  konjugiert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AJ" />
+      <display value="Pertussis-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AJ01" />
+      <display value="Pertussis, inaktiviert, ganze Zelle" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AJ02" />
+      <display value="Pertussis, gereinigtes Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AJ51" />
+      <display value="Pertussis, inaktiviert, ganze Zelle, Kombinationen mit Toxoiden" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AJ52" />
+      <display value="Pertussis, gereinigtes Antigen, Kombinationen mit Toxoiden" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AK" />
+      <display value="Pest-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AK01" />
+      <display value="Pest, inaktiviert, ganze Zelle" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AL" />
+      <display value="Pneumokokken-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AL01" />
+      <display value="Pneumokokken, gereinigtes Polysaccharid-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AL02" />
+      <display value="Pneumokokken, gereinigtes Polysaccharid-Antigen, konjugiert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AL52" />
+      <display value="Pneumokokken, gereinigtes Polysaccharid-Antigen  und Haemophilus influenzae B, konjugiert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AM" />
+      <display value="Tetanus-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AM01" />
+      <display value="Tetanus-Toxoid" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AM51" />
+      <display value="Tetanus-Toxoid, Kombinationen mit Diphtherie-Toxoid" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AM52" />
+      <display value="Tetanus-Toxoid, Kombinationen mit Tetanus-Immunglobulin" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AN" />
+      <display value="Tuberkulose-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AN01" />
+      <display value="Tuberkulose, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AP" />
+      <display value="Typhus-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AP01" />
+      <display value="Typhus, oral, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AP02" />
+      <display value="Typhus, inaktiviert, ganze Zelle" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AP03" />
+      <display value="Typhus, gereinigtes Polysaccharid-Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07AP10" />
+      <display value="Typhus, Kombinationen mit Paratyphustypen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BA" />
+      <display value="Encephalitis-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BA01" />
+      <display value="FSME, inaktiviert, ganzes Virus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BA02" />
+      <display value="Encephalitis, japanische, inaktiviert, ganzes Virus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BA03" />
+      <display value="Encephalitis, japanische, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BB" />
+      <display value="Influenza-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BB01" />
+      <display value="Influenza, inaktiviert, ganzes Virus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BB02" />
+      <display value="Influenza, inaktiviert, Spaltvirus oder Oberflächenantigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BB03" />
+      <display value="Influenza, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BC" />
+      <display value="Hepatitis-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BC01" />
+      <display value="Hepatitis B, gereinigtes Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BC02" />
+      <display value="Hepatitis A, inaktiviert, ganzes Virus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BC03" />
+      <display value="Hepatitis A, gereinigtes Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BC20" />
+      <display value="Kombinationen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BD" />
+      <display value="Masern-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BD01" />
+      <display value="Masern, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BD51" />
+      <display value="Masern, Kombinationen mit Mumps, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BD52" />
+      <display value="Masern, Kombinationen mit Mumps und Röteln,  lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BD53" />
+      <display value="Masern, Kombinationen mit Röteln, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BD54" />
+      <display value="Masern, Kombinationen mit Mumps, Röteln und Varicella,  lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BE" />
+      <display value="Mumps-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BE01" />
+      <display value="Mumps, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BF" />
+      <display value="Poliomyelitis-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BF01" />
+      <display value="Poliomyelitis, oral, monovalent, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BF02" />
+      <display value="Poliomyelitis, oral, trivalent, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BF03" />
+      <display value="Poliomyelitis, trivalent, inaktiviert, ganzes Virus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BF04" />
+      <display value="Poliomyelitis, oral, bivalent, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BG" />
+      <display value="Tollwut-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BG01" />
+      <display value="Tollwut, inaktiviert, ganzes Virus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BH" />
+      <display value="Rotavirus-Diarrhoe-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BH01" />
+      <display value="Rotavirus, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BH02" />
+      <display value="Rotavirus, pentavalent, lebend, Reassortanten" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BJ" />
+      <display value="Röteln-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BJ01" />
+      <display value="Röteln, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BJ51" />
+      <display value="Röteln, Kombinationen mit Mumps, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BK" />
+      <display value="Varicella Zoster Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BK01" />
+      <display value="Varicella, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BK02" />
+      <display value="Zoster Virus, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BK03" />
+      <display value="Zoster Virus, gereinigtes Antigen" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BL" />
+      <display value="Gelbfieber-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BL01" />
+      <display value="Gelbfieber, lebend abgeschwächt" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BM" />
+      <display value="Papillomvirus-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BM01" />
+      <display value="Humaner-Papillomvirus-Impfstoff (Typen 6,11,16,18)" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BM02" />
+      <display value="Humaner-Papillomvirus-Impfstoff (Typen 16,18)" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BM03" />
+      <display value="Humaner-Papillomvirus-Impfstoff  (Typen 6,11,16,18,31,33,45,52,58)" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BX" />
+      <display value="Andere virale Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BX01" />
+      <display value="Pocken-Impfstoff, lebend, modifiziert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07BX03" />
+      <display value="Covid-19-Impfstoffe" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA" />
+      <display value="Bakterielle und virale Impfstoffe, kombiniert" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA01" />
+      <display value="Diphtherie-Poliomyelitis-Tetanus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA02" />
+      <display value="Diphtherie-Pertussis-Poliomyelitis-Tetanus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA03" />
+      <display value="Diphtherie-Röteln-Tetanus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA04" />
+      <display value="Haemophilus influenzae B und Poliomyelitis" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA05" />
+      <display value="Diphtherie-Hepatitis B-Pertussis-Tetanus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA06" />
+      <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Poliomyelitis-Tetanus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA07" />
+      <display value="Diphtherie-Hepatitis B-Tetanus" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA08" />
+      <display value="Haemophilus influenzae B und Hepatitis B" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA09" />
+      <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA10" />
+      <display value="Typhus-Hepatitis A" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA11" />
+      <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA12" />
+      <display value="Diphtherie-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+    </contains>
+    <contains>
+      <system value="http://fhir.de/CodeSystem/dimdi/atc" />
+      <version value="atcgm2021" />
+      <code value="J07CA13" />
+      <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B-Meningokokken  A + C" />
+    </contains>
+  </expansion>
+</ValueSet>

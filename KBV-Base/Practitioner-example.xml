@@ -1,0 +1,94 @@
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="348584983948" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Practitioner|1.1.1" />
+  </meta>
+  <!-- ANR -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="LANR" />
+      </coding>
+    </type>
+    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+    <value value="123456789" />
+  </identifier>
+  <!-- EFN -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="DN" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/bundesaerztekammer/efn" />
+    <value value="123456789123456" />
+  </identifier>
+  <active value="true" />
+  <name>
+    <use value="official" />
+    <text value="Rainer Gold" />
+    <family value="Gold">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Gold" />
+      </extension>
+    </family>
+    <given value="Rainer" />
+  </name>
+  <name>
+    <use value="maiden" />
+    <text value="Grün" />
+    <family value="Meister von Grün">
+      <extension url="http://fhir.de/StructureDefinition/humanname-namenszusatz">
+        <valueString value="Meister" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-prefix">
+        <valueString value="von" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Grün" />
+      </extension>
+    </family>
+  </name>
+  <address>
+    <type value="both" />
+    <line value="Musterstr. 1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="1" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Musterstr." />
+      </extension>
+    </line>
+    <city value="Darmstadt" />
+    <postalCode value="64283" />
+    <country value="D" />
+  </address>
+  <address>
+    <type value="postal" />
+    <line value="12345">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="12345" />
+      </extension>
+    </line>
+    <city value="Darmstadt" />
+    <country value="D" />
+  </address>
+  <qualification>
+    <code>
+      <coding>
+        <system value="http://snomed.info/sct" />
+        <version value="http://snomed.info/sct/900000000000207008/version/20200131" />
+        <code value="112247003" />
+        <display value="Medical doctor (occupation)">
+          <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+            <extension url="content">
+              <valueString value="Arzt/ Ärztin" />
+            </extension>
+          </extension>
+        </display>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

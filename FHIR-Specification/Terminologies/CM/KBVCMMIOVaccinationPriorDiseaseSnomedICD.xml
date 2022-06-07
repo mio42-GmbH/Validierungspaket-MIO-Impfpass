@@ -1,0 +1,113 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_Vaccination_Prior_Disease_Snomed_ICD" />
+  <version value="1.1.0" />
+  <name value="KBV_CM_MIO_Vaccination_Prior_Disease_Snomed_ICD" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Diese Conceptmap verknüpft die Codes für impfrelevante durchgemachte Krankheiten in den Codesystemen SNOMED CT® und ICD" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <group>
+    <source value="http://snomed.info/sct" />
+    <target value="http://fhir.de/CodeSystem/dimdi/icd-10-gm" />
+    <element>
+      <code value="27836007" />
+      <display value="Pertussis (disorder)" />
+      <target>
+        <code value="A37.-" />
+        <display value="Keuchhusten" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="16541001" />
+      <display value="Yellow fever (disorder)" />
+      <target>
+        <code value="A95.-" />
+        <display value="Gelbfieber" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="16901001" />
+      <display value="Central European encephalitis (disorder)" />
+      <target>
+        <code value="A84.1" />
+        <display value="Mitteleuropäische Enzephalitis, durch Zecken übertragen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="76795007" />
+      <display value="Acute type B viral hepatitis (disorder)" />
+      <target>
+        <code value="B16.-" />
+        <display value="Akute Virushepatitis B" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="235869004" />
+      <display value="Chronic viral hepatitis B with hepatitis D (disorder)" />
+      <target>
+        <code value="B18.0" />
+        <display value="Chronische Virushepatitis B mit Delta-Virus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="186639003" />
+      <display value="Chronic viral hepatitis B without delta-agent (disorder)" />
+      <target>
+        <code value="B18.1-" />
+        <display value="Chronische Virushepatitis B ohne Delta-Virus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="25102003" />
+      <display value="Acute type A viral hepatitis (disorder)" />
+      <target>
+        <code value="B15.-" />
+        <display value="Akute Virushepatitis A" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="36653000" />
+      <display value="Rubella (disorder)" />
+      <target>
+        <code value="B06.-" />
+        <display value="Röteln [Rubeola] [Rubella]" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="36989005" />
+      <display value="Mumps (disorder)" />
+      <target>
+        <code value="B26.-" />
+        <display value="Mumps" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="14189004" />
+      <display value="Measles (disorder)" />
+      <target>
+        <code value="B05.-" />
+        <display value="Masern" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="38907003" />
+      <display value="Varicella (disorder)" />
+      <target>
+        <code value="B01.-" />
+        <display value="Varizellen [Windpocken]" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

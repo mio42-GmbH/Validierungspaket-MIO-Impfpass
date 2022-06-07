@@ -1,0 +1,635 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_Vaccination_Record_Prime" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at ​http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at ​http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <fhirVersion value="4.0.1" />
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Immunization" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Immunization" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Immunization">
+      <path value="Immunization" />
+      <short value="Record_Prime" />
+      <definition value="In diesem Profil werden die grundlegenden Inhalte zum Impfeintrag, also einer Impfzeile definiert. Diese besteht unter Anderem aus dem Impfstoff, dem Impfdatum u.s.w.&#xD;&#xA;&#xD;&#xA;Weiterhin ist dieses Profil mit dem Szenario Daten eintragen verknüpft und hat daher mehr Zwänge als das Profil KBV_PR_MIO_Vaccination_Record_Addendum." />
+      <constraint>
+        <key value="Occurrence" />
+        <severity value="error" />
+        <human value="Das Impfdatum muss mindestens aus TT.MM.JJJJ" />
+        <expression value="occurrenceDateTime.toString().length()&gt;=10" />
+        <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime" />
+      </constraint>
+      <constraint>
+        <key value="atc1" />
+        <severity value="error" />
+        <human value="Nur bei Angabe des Snomed Codes 787859002 Sonstiger Impfstoff (hier nicht gelistet) muss kein ATC-Code angeben werden." />
+        <expression value="vaccineCode.coding.where(system='http://snomed.info/sct' and code!='787859002').exists() implies vaccineCode.coding.where(system='http://fhir.de/CodeSystem/dimdi/atc').exists()" />
+        <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime" />
+      </constraint>
+    </element>
+    <element id="Immunization.meta">
+      <path value="Immunization.meta" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.meta.versionId">
+      <path value="Immunization.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.meta.lastUpdated">
+      <path value="Immunization.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.meta.source">
+      <path value="Immunization.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.meta.profile">
+      <path value="Immunization.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Prime|1.1.0" />
+    </element>
+    <element id="Immunization.meta.security">
+      <path value="Immunization.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.meta.tag">
+      <path value="Immunization.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.implicitRules">
+      <path value="Immunization.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.language">
+      <path value="Immunization.language" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.text">
+      <path value="Immunization.text" />
+    </element>
+    <element id="Immunization.text.status">
+      <path value="Immunization.text.status" />
+      <fixedCode value="extensions" />
+    </element>
+    <element id="Immunization.contained">
+      <path value="Immunization.contained" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.extension">
+      <path value="Immunization.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.extension:typ_des_Eintrages">
+      <path value="Immunization.extension" />
+      <sliceName value="typ_des_Eintrages" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.extension:verantwortliche_Person">
+      <path value="Immunization.extension" />
+      <sliceName value="verantwortliche_Person" />
+      <short value="Verantwortliche Person" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Attester|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.extension:eintragende_Person">
+      <path value="Immunization.extension" />
+      <sliceName value="eintragende_Person" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.identifier">
+      <path value="Immunization.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.status">
+      <path value="Immunization.status" />
+      <fixedCode value="completed" />
+    </element>
+    <element id="Immunization.statusReason">
+      <path value="Immunization.statusReason" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccineCode">
+      <path value="Immunization.vaccineCode" />
+      <short value="Impfstoff" />
+      <definition value="Dieses Element beschreibt den verabreichten Impfstoff." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.coding">
+      <path value="Immunization.vaccineCode.coding" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="system" />
+        </discriminator>
+        <rules value="closed" />
+      </slicing>
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="snomed_CT" />
+      <short value="Snomed CT" />
+      <definition value="Dieses Element beschreibt den Impfstoff als SNOMED CT®  Product Code." />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine|1.1.0" />
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://snomed.info/sct" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.version">
+      <path value="Immunization.vaccineCode.coding.version" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.display">
+      <path value="Immunization.vaccineCode.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.display.extension">
+      <path value="Immunization.vaccineCode.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.display.extension:anzeigenameCodeSnomed">
+      <path value="Immunization.vaccineCode.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+    </element>
+    <element id="Immunization.vaccineCode.coding:snomed_CT.userSelected">
+      <path value="Immunization.vaccineCode.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="atc" />
+      <short value="ATC" />
+      <definition value="Bezeichnung des Impfstoffs oder des Kombinationsimpfstoffes als Anatomisch-Therapeutisch-Chemische Klassifikation samt ATC-Code des Impfstoffs oder Kombinationsimpfstoffes. Grundlage ist die amtliche Fassung des ATC-Index für Deutschland (DIMDI). Es sind alle ATC-Codes aus der amtlichen Fassung des ATC-Index gelistet, unabhängig von deren Marktverfügbarkeit." />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_ATC|1.1.0" />
+      </binding>
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/dimdi/atc" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc.version">
+      <path value="Immunization.vaccineCode.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc.display">
+      <path value="Immunization.vaccineCode.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:atc.userSelected">
+      <path value="Immunization.vaccineCode.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn">
+      <path value="Immunization.vaccineCode.coding" />
+      <sliceName value="pharmazentralnummer_pzn" />
+      <definition value="8-stellige Pharmazentralnummer (PZN) des Fertigarzneimittels (Impfstoffs). Die PZN definiert ein Fertigarzneimittel eindeutig." />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn.system">
+      <path value="Immunization.vaccineCode.coding.system" />
+      <min value="1" />
+      <fixedUri value="http://fhir.de/CodeSystem/ifa/pzn" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn.code">
+      <path value="Immunization.vaccineCode.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn.display">
+      <path value="Immunization.vaccineCode.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.vaccineCode.coding:pharmazentralnummer_pzn.userSelected">
+      <path value="Immunization.vaccineCode.coding.userSelected" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.vaccineCode.text">
+      <path value="Immunization.vaccineCode.text" />
+      <short value="Handelsname" />
+      <definition value="Bezeichnung des Handelsnamens des verabreichten Impfstoffs." />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.patient">
+      <path value="Immunization.patient" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.patient.reference">
+      <path value="Immunization.patient.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.patient.type">
+      <path value="Immunization.patient.type" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.patient.identifier">
+      <path value="Immunization.patient.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.patient.display">
+      <path value="Immunization.patient.display" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.encounter">
+      <path value="Immunization.encounter" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.occurrence[x]">
+      <path value="Immunization.occurrence[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.occurrence[x]:occurrenceDateTime">
+      <path value="Immunization.occurrence[x]" />
+      <sliceName value="occurrenceDateTime" />
+      <short value="Datum der Schutzimpfung" />
+      <definition value="Im Anwendungsszenario &quot;Daten eintragen&quot; entspricht es dem Datum, an dem die Impfung durchgeführt wurde.&#xD;&#xA;&#xD;&#xA;Im Anwendungsszenario &quot;Daten nach- oder übertragen&quot; entspricht es dem Datum oder einer gröberen Angabe der Zeit bzw. des Zeitraums einer zurückliegenden Impfung, die im Impfpass nachgetragen wird. Wird eine abgeschlossene Grundimmunisierung übertragen, so sollte das Datum der Gabe der letzten Dosis dokumentiert werden." />
+      <min value="1" />
+      <type>
+        <code value="dateTime" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.recorded">
+      <path value="Immunization.recorded" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.primarySource">
+      <path value="Immunization.primarySource" />
+      <min value="1" />
+      <fixedBoolean value="true" />
+    </element>
+    <element id="Immunization.reportOrigin">
+      <path value="Immunization.reportOrigin" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.location">
+      <path value="Immunization.location" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.manufacturer">
+      <path value="Immunization.manufacturer" />
+      <short value="Hersteller" />
+      <definition value="Name des herstellenden bzw. des anbietenden Unternehmens. Dies bietet eine Zusatzinformation zum Fertigarzneimittel." />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.manufacturer.reference">
+      <path value="Immunization.manufacturer.reference" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.manufacturer.type">
+      <path value="Immunization.manufacturer.type" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.manufacturer.identifier">
+      <path value="Immunization.manufacturer.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.manufacturer.display">
+      <path value="Immunization.manufacturer.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.lotNumber">
+      <path value="Immunization.lotNumber" />
+      <short value="Chargenbezeichnung" />
+      <definition value="Chargenbezeichnung des verabreichten Impfstoffs." />
+      <min value="1" />
+      <maxLength value="20" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.expirationDate">
+      <path value="Immunization.expirationDate" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.site">
+      <path value="Immunization.site" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.route">
+      <path value="Immunization.route" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.doseQuantity">
+      <path value="Immunization.doseQuantity" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.performer">
+      <path value="Immunization.performer" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.note">
+      <path value="Immunization.note" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="text" />
+        </discriminator>
+        <ordered value="true" />
+        <rules value="openAtEnd" />
+      </slicing>
+      <short value="Notes" />
+      <definition value="In diesem Element wird der Hinweis und die Anmerkungen zur durchgeführten Impfung eingetragen werden." />
+      <min value="1" />
+      <max value="2" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.note.author[x]">
+      <path value="Immunization.note.author[x]" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.note.time">
+      <path value="Immunization.note.time" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.note:hinweis">
+      <path value="Immunization.note" />
+      <sliceName value="hinweis" />
+      <min value="1" />
+      <max value="1" />
+    </element>
+    <element id="Immunization.note:hinweis.author[x]">
+      <path value="Immunization.note.author[x]" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.note:hinweis.time">
+      <path value="Immunization.note.time" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.note:hinweis.text">
+      <path value="Immunization.note.text" />
+      <fixedMarkdown value="Bei einer ungewöhnlichen Impfreaktion sollte die impfende ärztliche Person benachrichtigt werden. Die ärztlich tätige Person hat, wenn der Verdacht einer gesundheitlichen Schädigung besteht, die über das übliche Ausmaß einer Impfreaktion hinaus geht verpflichtet, den Verdacht dem zuständigen Gesundheitsamt namentlich zu melden (§ 6 Absatz 1 Nr 3 des lnfektionsschutzgesetzes • lfSG) Im Falle eines Impfschadens besteht unter den Voraussetzungen des § 60 Absatz 1 lfSG ein Anspruch auf Entschädigung in entsprechender Anwendung der Vorschriften des Bundesversorgungsgesetzes. Der Antrag ist bei der für die Durchführung des Bundesversorgungsgesetzes zuständigen Behörde (§ 64 Absatz 1 lfSG, i.d.R. 'Versorgungsamt') zu stellen. Weitere Auskünfte erteilt das zuständige Gesundheitsamt." />
+    </element>
+    <element id="Immunization.reasonCode">
+      <path value="Immunization.reasonCode" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.reasonReference">
+      <path value="Immunization.reasonReference" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.isSubpotent">
+      <path value="Immunization.isSubpotent" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.subpotentReason">
+      <path value="Immunization.subpotentReason" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.education">
+      <path value="Immunization.education" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.programEligibility">
+      <path value="Immunization.programEligibility" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.fundingSource">
+      <path value="Immunization.fundingSource" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.reaction">
+      <path value="Immunization.reaction" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.protocolApplied">
+      <path value="Immunization.protocolApplied" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.protocolApplied.extension">
+      <path value="Immunization.protocolApplied.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.extension:datum_der_Folgeimpfung">
+      <path value="Immunization.protocolApplied.extension" />
+      <sliceName value="datum_der_Folgeimpfung" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Follow_Up|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.protocolApplied.series">
+      <path value="Immunization.protocolApplied.series" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.protocolApplied.authority">
+      <path value="Immunization.protocolApplied.authority" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease">
+      <path value="Immunization.protocolApplied.targetDisease" />
+      <short value="Erkrankung gegen die geimpft wird" />
+      <definition value="Dieses Element beschreibt den Namen der Krankheit, gegen die geimpft wird. Es handelt sich um ein mehrfach auswählbares Element, da ein Impfstoff mehrere einzelne Wirkstoffe enthalten kann und somit mehrere Erkrankungen, gegen die geimpft wird, adressiert werden können." />
+      <min value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_TargetDisease|1.1.0" />
+      </binding>
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding">
+      <path value="Immunization.protocolApplied.targetDisease.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.system">
+      <path value="Immunization.protocolApplied.targetDisease.coding.system" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.version">
+      <path value="Immunization.protocolApplied.targetDisease.coding.version" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.code">
+      <path value="Immunization.protocolApplied.targetDisease.coding.code" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.display">
+      <path value="Immunization.protocolApplied.targetDisease.coding.display" />
+      <min value="1" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.display.extension">
+      <path value="Immunization.protocolApplied.targetDisease.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Immunization.protocolApplied.targetDisease.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <min value="1" />
+      <max value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German" />
+      </type>
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Immunization.protocolApplied.targetDisease.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Immunization.protocolApplied.targetDisease.coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Immunization.protocolApplied.targetDisease.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <definition value="In diesem Attribut sollen die entsprechende deutsche Bezeichnung des Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall den Displaynamen des Targetsystems aus https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_Vaccination_Vaccine_Targetdisease" />
+    </element>
+    <element id="Immunization.protocolApplied.targetDisease.text">
+      <path value="Immunization.protocolApplied.targetDisease.text" />
+      <max value="0" />
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]">
+      <path value="Immunization.protocolApplied.doseNumber[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString">
+      <path value="Immunization.protocolApplied.doseNumber[x]" />
+      <sliceName value="doseNumberString" />
+      <min value="1" />
+      <type>
+        <code value="string" />
+      </type>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension">
+      <path value="Immunization.protocolApplied.doseNumber[x].extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:data-absent-reason">
+      <path value="Immunization.protocolApplied.doseNumber[x].extension" />
+      <sliceName value="data-absent-reason" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:data-absent-reason.value[x]">
+      <path value="Immunization.protocolApplied.doseNumber[x].extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Immunization.protocolApplied.doseNumber[x]:doseNumberString.extension:data-absent-reason.value[x]:valueCode">
+      <path value="Immunization.protocolApplied.doseNumber[x].extension.value[x]" />
+      <sliceName value="valueCode" />
+      <min value="1" />
+      <fixedCode value="unknown" />
+    </element>
+    <element id="Immunization.protocolApplied.seriesDoses[x]">
+      <path value="Immunization.protocolApplied.seriesDoses[x]" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

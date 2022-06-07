@@ -1,0 +1,1073 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_Vaccination_Vaccine_Targetdisease" />
+  <version value="1.1.0" />
+  <name value="KBV_CM_MIO_Vaccination_Vaccine_Targetdisease" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Diese Conceptmap verknüpft die Codes für impfrelevante durchgemachte Krankheiten mit denen für Impfstoffe und bietet einen deutschen Code." />
+  <copyright value="Copyright © [2020], Kassenärztliche Bundesvereinigung (KBV). All rights reserved. Hinweis: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license." />
+  <group>
+    <source value="http://snomed.info/sct" />
+    <target value="http://fhir.de/CodeSystem/dimdi/alpha-id" />
+    <element>
+      <code value="840539006" />
+      <display value="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)" />
+      <target>
+        <code value="I130800" />
+        <display value="COVID-19 o.n.A." />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="67924001" />
+      <display value="Smallpox (disorder)" />
+      <target>
+        <code value="I15064" />
+        <display value="Pocken" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="240532009" />
+      <display value="Human papilomavirus infection (disorder)" />
+      <target>
+        <code value="I130676" />
+        <display value="HPV [Humanes Papillomavirus]-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="16541001" />
+      <display value="Yellow fewer (disorder)" />
+      <target>
+        <code value="I14036" />
+        <display value="Gelbfieber" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="4740000" />
+      <display value="Herpes Zoster (disorder)" />
+      <target>
+        <code value="I23144" />
+        <display value="Herpes zoster" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="38907003" />
+      <display value="Varicella (disorder)" />
+      <target>
+        <code value="I15579" />
+        <display value="Windpocken" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="36653000" />
+      <display value="Rubella (disorder)" />
+      <target>
+        <code value="I15222" />
+        <display value="Röteln" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="18624000" />
+      <display value="Disease caused by Rotavirus (disorder)" />
+      <target>
+        <code value="I130669" />
+        <display value="Rotaviren-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="14168008" />
+      <display value="Rabies (disorder)" />
+      <target>
+        <code value="I22407" />
+        <display value="Tollwut" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="398102009" />
+      <display value="Acute Poliomyelitis (disorder)" />
+      <target>
+        <code value="I14372" />
+        <display value="Poliomyelitis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="36989005" />
+      <display value="Mumps (disorder)" />
+      <target>
+        <code value="I14707" />
+        <display value="Mumps" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="14189004" />
+      <display value="Measles (disorder)" />
+      <target>
+        <code value="I14609" />
+        <display value="Masern" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="40468003" />
+      <display value="Viral hepatitis, type A (disorder)" />
+      <target>
+        <code value="I15771" />
+        <display value="Hepatitis A" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="66071002" />
+      <display value="Viral hepatitis, type B (disorder)" />
+      <target>
+        <code value="I15777" />
+        <display value="Hepatitis B" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="6142004" />
+      <display value="Influenza (disorder)" />
+      <target>
+        <code value="I14083" />
+        <display value="Grippe [Influenza]" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="52947006" />
+      <display value="Japanese encephalitis virus disease (disorder)" />
+      <target>
+        <code value="I1064" />
+        <display value="Japanische Enzephalitis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="16901001" />
+      <display value="Central European encephalitis (disorder)" />
+      <target>
+        <code value="I23483" />
+        <display value="FSME [Zentraleuropäische Frühsommer-Meningoenzephalitis]" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="4834000" />
+      <display value="Typhoid fever (disorder)" />
+      <target>
+        <code value="I22454" />
+        <display value="Typhus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="56717001" />
+      <display value="Tuberculosis (disorder)" />
+      <target>
+        <code value="I22433" />
+        <display value="Tuberkulose" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="76902006" />
+      <display value="Tetanus (disorder)" />
+      <target>
+        <code value="I15432" />
+        <display value="Tetanus-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="16814004" />
+      <display value="Pneumococcal infectious disease (disorder)" />
+      <target>
+        <code value="I130672" />
+        <display value="Pneumokokken-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="58750007" />
+      <display value="Plague (disorder)" />
+      <target>
+        <code value="I15008" />
+        <display value="Pest" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="27836007" />
+      <display value="Pertussis (disorder)" />
+      <target>
+        <code value="I14368" />
+        <display value="Pertussis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="23511006" />
+      <display value="Meningococcal infectious disease (disorder)" />
+      <target>
+        <code value="I130671" />
+        <display value="Meningokokken-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="709410003" />
+      <display value="Haemophilus influenzae type b infection (disorder)" />
+      <target>
+        <code value="I130674" />
+        <display value="Haemophilus-influenzae-Typ-B-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="397430003" />
+      <display value="Diphtheria caused by Corynebacterium diphtheriae (disorder)" />
+      <target>
+        <code value="I23502" />
+        <display value="Diphtherie" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="63650001" />
+      <display value="Cholera (disorder)" />
+      <target>
+        <code value="I13614" />
+        <display value="Cholera" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="75702008" />
+      <display value="Brucellosis (disorder)" />
+      <target>
+        <code value="I13550" />
+        <display value="Brucellose" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="409498004" />
+      <display value="Anthrax (disorder)" />
+      <target>
+        <code value="I14685" />
+        <display value="Milzbrand" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="39111003" />
+      <display value="Louse-borne typhus (disorder)" />
+      <target>
+        <code value="I13965" />
+        <display value="Fleckfieber" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="28944009" />
+      <display value="Cytomegalovirus infection (disorder)" />
+      <target>
+        <code value="I130677" />
+        <display value="Zytomegalieviren-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="55735004" />
+      <display value="Respiratory syncytial virus infection (disorder)" />
+      <target>
+        <code value="I130678" />
+        <display value="Respiratory-Syncytial-Viren-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="186431008" />
+      <display value="Clostridioides difficile infection (disorder)" />
+      <target>
+        <code value="I130668" />
+        <display value="Clostridioides-difficile-Infektion" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="307333004" />
+      <display value="Rhesus isoimmunization due to anti-D (disorder)" />
+      <target>
+        <code value="I109141" />
+        <display value="Rh-Unverträglichkeit bei Schwangerschaft" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://snomed.info/sct" />
+    <target value="http://snomed.info/sct" />
+    <element>
+      <code value="840539006" />
+      <display value="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)" />
+      <target>
+        <code value="1119305005" />
+        <display value="Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="1119349007" />
+        <display value="Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="67924001" />
+      <display value="Smallpox (disorder)" />
+      <target>
+        <code value="836389008" />
+        <display value="Vaccine product containing Vaccinia virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="240532009" />
+      <display value="Human papilomavirus infection (disorder)" />
+      <target>
+        <code value="836379009" />
+        <display value="Vaccine product containing Human papillomavirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="16541001" />
+      <display value="Yellow fewer (disorder)" />
+      <target>
+        <code value="836385002" />
+        <display value="Vaccine product containing Yellow fever virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="4740000" />
+      <display value="Herpes Zoster (disorder)" />
+      <target>
+        <code value="836495005" />
+        <display value="Vaccine product containing Human alphaherpesvirus 3 antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="2221000221107" />
+        <display value="Vaccine product containing only live attenuated Human alphaherpesvirus 3 antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="62294009" />
+        <display value="Product containing Varicella-zoster virus antibody (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="38907003" />
+      <display value="Varicella (disorder)" />
+      <target>
+        <code value="2221000221107" />
+        <display value="Vaccine product containing only live attenuated Human alphaherpesvirus 3 antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871908002" />
+        <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="62294009" />
+        <display value="Product containing Varicella-zoster virus antibody (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="36653000" />
+      <display value="Rubella (disorder)" />
+      <target>
+        <code value="836388000" />
+        <display value="Vaccine product containing Rubella virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871831003" />
+        <display value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836498007+836388000" />
+        <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836382004 + 836388000" />
+        <display value="Vaccine product containing Measles morbillivirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871908002" />
+        <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836388000 + 863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="18624000" />
+      <display value="Disease caused by Rotavirus (disorder)" />
+      <target>
+        <code value="836387005" />
+        <display value="Vaccine product containing Rotavirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="14168008" />
+      <display value="Rabies (disorder)" />
+      <target>
+        <code value="836393002" />
+        <display value="Vaccine product containing Rabies lyssavirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="80834004" />
+        <display value="Product containing rabies human immune globulin (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="398102009" />
+      <display value="Acute Poliomyelitis (disorder)" />
+      <target>
+        <code value="1031000221108" />
+        <display value="Vaccine product containing Human poliovirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871837004" />
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871878002" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836380007 + 1031000221108" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Human poliovirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871887006" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871895005" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871891001" />
+        <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="36989005" />
+      <display value="Mumps (disorder)" />
+      <target>
+        <code value="871738001" />
+        <display value="Vaccine product containing only live attenuated Mumps orthorubulavirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836498007+836382004" />
+        <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Measles morbillivirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836498007+836388000" />
+        <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871831003" />
+        <display value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871908002" />
+        <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="14189004" />
+      <display value="Measles (disorder)" />
+      <target>
+        <code value="836382004" />
+        <display value="Vaccine product containing Measles morbillivirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836498007+836382004" />
+        <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Measles morbillivirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871831003" />
+        <display value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836382004 + 836388000" />
+        <display value="Vaccine product containing Measles morbillivirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871908002" />
+        <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="40468003" />
+      <display value="Viral hepatitis, type A (disorder)" />
+      <target>
+        <code value="836375003" />
+        <display value="Vaccine product containing Hepatitis A virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871803007" />
+        <display value="Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871804001" />
+        <display value="Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="66071002" />
+      <display value="Viral hepatitis, type B (disorder)" />
+      <target>
+        <code value="836374004" />
+        <display value="Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871803007" />
+        <display value="Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871806004" />
+        <display value="Vaccine product containing only Haemophilus influenzae type B and Hepatitis B virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836374004 + 863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871895005" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871891001" />
+        <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="863911006+836374004+601000221108+836381006" />
+        <display value="Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004 + 871871008" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="9542007" />
+        <display value="Product containing Hepatitis B surface antigen immunoglobulin (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="6142004" />
+      <display value="Influenza (disorder)" />
+      <target>
+        <code value="836377006" />
+        <display value="Vaccine product containing Influenza virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="52947006" />
+      <display value="Japanese encephalitis virus disease (disorder)" />
+      <target>
+        <code value="836378001" />
+        <display value="Vaccine product containing Japanese encephalitis virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="16901001" />
+      <display value="Central European encephalitis (disorder)" />
+      <target>
+        <code value="836403007" />
+        <display value="Vaccine product containing Tick-borne encephalitis virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="4834000" />
+      <display value="Typhoid fever (disorder)" />
+      <target>
+        <code value="836390004" />
+        <display value="Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836383009 + 836390004" />
+        <display value="Vaccine product containing Vibrio cholerae antigen (medicinal product) + Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871804001" />
+        <display value="Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="56717001" />
+      <display value="Tuberculosis (disorder)" />
+      <target>
+        <code value="836402002" />
+        <display value="Vaccine product containing live attenuated Mycobacterium bovis antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="76902006" />
+      <display value="Tetanus (disorder)" />
+      <target>
+        <code value="863911006" />
+        <display value="Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871826000" />
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871837004" />
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871891001" />
+        <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836374004 + 863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871875004" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871878002" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836388000 + 863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="863911006+836374004+601000221108+836381006" />
+        <display value="Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871887006" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871895005" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004 + 871871008" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="384706007" />
+        <display value="Product containing tetanus antitoxin (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="16814004" />
+      <display value="Pneumococcal infectious disease (disorder)" />
+      <target>
+        <code value="836398006" />
+        <display value="Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836398006 + 836380007" />
+        <display value="Vaccine product containing Streptococcus pneumoniae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="58750007" />
+      <display value="Plague (disorder)" />
+      <target>
+        <code value="840549009" />
+        <display value="Vaccine product containing Yersinia pestis antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="27836007" />
+      <display value="Pertussis (disorder)" />
+      <target>
+        <code value="601000221108" />
+        <display value="Vaccine product containing Bordetella pertussis antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836380007 + 601000221108" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871875004" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871878002" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="863911006+836374004+601000221108+836381006" />
+        <display value="Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871887006" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871895005" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871891001" />
+        <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004 + 871871008" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="23511006" />
+      <display value="Meningococcal infectious disease (disorder)" />
+      <target>
+        <code value="836401009" />
+        <display value="Vaccine product containing Neisseria meningitidis antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836500008" />
+        <display value="Vaccine product containing only Haemophilus influenzae type B and Neisseria meningitidis serogroup C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004 + 871871008" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="709410003" />
+      <display value="Haemophilus influenzae type b infection (disorder)" />
+      <target>
+        <code value="836380007" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836380007 + 601000221108" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836500008" />
+        <display value="Vaccine product containing only Haemophilus influenzae type B and Neisseria meningitidis serogroup C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836398006 + 836380007" />
+        <display value="Vaccine product containing Streptococcus pneumoniae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836380007 + 1031000221108" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Human poliovirus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871887006" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871806004" />
+        <display value="Vaccine product containing only Haemophilus influenzae type B and Hepatitis B virus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871895005" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004 + 871871008" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="397430003" />
+      <display value="Diphtheria caused by Corynebacterium diphtheriae (disorder)" />
+      <target>
+        <code value="836381006" />
+        <display value="Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871826000" />
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871837004" />
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871875004" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871878002" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836388000 + 863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="863911006+836374004+601000221108+836381006" />
+        <display value="Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871887006" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836374004 + 863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871895005" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871891001" />
+        <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="871729003 + 836380007 + 601000221108 + 863911006 + 836374004 + 871871008" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="63650001" />
+      <display value="Cholera (disorder)" />
+      <target>
+        <code value="836383009" />
+        <display value="Vaccine product containing Vibrio cholerae antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+      <target>
+        <code value="836383009 + 836390004" />
+        <display value="Vaccine product containing Vibrio cholerae antigen (medicinal product) + Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="75702008" />
+      <display value="Brucellosis (disorder)" />
+      <target>
+        <code value="7230005" />
+        <display value="Brucella vaccine (product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="409498004" />
+      <display value="Anthrax (disorder)" />
+      <target>
+        <code value="836384003" />
+        <display value="Vaccine product containing Bacillus anthracis antigen (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="39111003" />
+      <display value="Louse-borne typhus (disorder)" />
+      <target>
+        <code value="37146000" />
+        <display value="Typhus vaccine (product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="28944009" />
+      <display value="Cytomegalovirus infection (disorder)" />
+      <target>
+        <code value="9778000" />
+        <display value="Product containing Cytomegalovirus antibody (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="55735004" />
+      <display value="Respiratory syncytial virus infection (disorder)" />
+      <target>
+        <code value="108725001" />
+        <display value="Product containing palivizumab (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="186431008" />
+      <display value="Clostridioides difficile infection (disorder)" />
+      <target>
+        <code value="763703008" />
+        <display value="Product containing bezlotoxumab (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="307333004" />
+      <display value="Rhesus isoimmunization due to anti-D (disorder)" />
+      <target>
+        <code value="786224004" />
+        <display value="Product containing human anti-D immunoglobulin (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="64572001" />
+      <display value="Disease (disorder)" />
+      <target>
+        <code value="714569001" />
+        <display value="Product containing normal immunoglobulin human (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+    <element>
+      <code value="40733004" />
+      <display value="Infectious disease (disorder)" />
+      <target>
+        <code value="787859002" />
+        <display value="Vaccine product (medicinal product)" />
+        <equivalence value="relatedto" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

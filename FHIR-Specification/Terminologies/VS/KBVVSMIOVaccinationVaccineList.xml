@@ -1,0 +1,248 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Vaccine_List" />
+  <version value="1.1.0" />
+  <name value="KBV_VS_MIO_Vaccination_Vaccine_List" />
+  <title value="Vaccine" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Dieses Valueset beinhaltet Codes zur Beschreibung der Impfstoffe als SNOMED CT Code." />
+  <immutable value="false" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+      <concept>
+        <code value="1119305005" />
+        <display value="Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="1119349007" />
+        <display value="Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871875004" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="787859002" />
+        <display value="Vaccine product (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="37146000" />
+        <display value="Typhus vaccine (product)" />
+      </concept>
+      <concept>
+        <code value="2221000221107" />
+        <display value="Vaccine product containing only live attenuated Human alphaherpesvirus 3 antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836498007+836388000" />
+        <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871729003+836380007+601000221108+863911006+836374004+871871008" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871891001" />
+        <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871729003+836380007+601000221108+863911006+836374004" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871804001" />
+        <display value="Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871895005" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871806004" />
+        <display value="Vaccine product containing only Haemophilus influenzae type B and Hepatitis B virus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871729003+836374004+863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871887006" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="863911006+836374004+601000221108+836381006" />
+        <display value="Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836380007+1031000221108" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Human poliovirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871729003+836388000+863911006" />
+        <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871878002" />
+        <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871837004" />
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871908002" />
+        <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836382004+836388000" />
+        <display value="Vaccine product containing Measles morbillivirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871831003" />
+        <display value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836498007+836382004" />
+        <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Measles morbillivirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871803007" />
+        <display value="Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871826000" />
+        <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836398006+836380007" />
+        <display value="Vaccine product containing Streptococcus pneumoniae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836500008" />
+        <display value="Vaccine product containing only Haemophilus influenzae type B and Neisseria meningitidis serogroup C antigens (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836380007+601000221108" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836383009+836390004" />
+        <display value="Vaccine product containing Vibrio cholerae antigen (medicinal product) + Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836378001" />
+        <display value="Vaccine product containing Japanese encephalitis virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836403007" />
+        <display value="Vaccine product containing Tick-borne encephalitis virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="871738001" />
+        <display value="Vaccine product containing only live attenuated Mumps orthorubulavirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="1031000221108" />
+        <display value="Vaccine product containing Human poliovirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836387005" />
+        <display value="Vaccine product containing Rotavirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836393002" />
+        <display value="Vaccine product containing Rabies lyssavirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836495005" />
+        <display value="Vaccine product containing Human alphaherpesvirus 3 antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836389008" />
+        <display value="Vaccine product containing Vaccinia virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836379009" />
+        <display value="Vaccine product containing Human papillomavirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836385002" />
+        <display value="Vaccine product containing Yellow fever virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836388000" />
+        <display value="Vaccine product containing Rubella virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836382004" />
+        <display value="Vaccine product containing Measles morbillivirus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836375003" />
+        <display value="Vaccine product containing Hepatitis A virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836374004" />
+        <display value="Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836377006" />
+        <display value="Vaccine product containing Influenza virus antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836390004" />
+        <display value="Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836402002" />
+        <display value="Vaccine product containing live attenuated Mycobacterium bovis antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="863911006" />
+        <display value="Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836398006" />
+        <display value="Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="840549009" />
+        <display value="Vaccine product containing Yersinia pestis antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="601000221108" />
+        <display value="Vaccine product containing Bordetella pertussis antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836401009" />
+        <display value="Vaccine product containing Neisseria meningitidis antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836380007" />
+        <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836381006" />
+        <display value="Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836383009" />
+        <display value="Vaccine product containing Vibrio cholerae antigen (medicinal product)" />
+      </concept>
+      <concept>
+        <code value="836384003" />
+        <display value="Vaccine product containing Bacillus anthracis antigen (medicinal product)" />
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

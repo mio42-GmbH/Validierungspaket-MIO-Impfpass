@@ -1,0 +1,283 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Vaccine_German" />
+  <version value="1.1.0" />
+  <name value="KBV_CS_MIO_Vaccination_Vaccine_German" />
+  <title value="Vaccine" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner der Impfstoffe." />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="Covid19Impfstoff" />
+    <display value="Covid-19-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="PertussisgereinigtesAntigenKombinationenmitToxoidenPertussisTetanusDiphtherieImpfstoff" />
+    <display value="Pertussis, gereinigtes Antigen, Kombinationen mit Toxoiden (Pertussis, Tetanus, Diphtherie-Impfstoff))" />
+  </concept>
+  <concept>
+    <code value="TyphusexanthematicusImpfstoff" />
+    <display value="Typhus (exanthematicus)-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="VarizellenImpfstoff" />
+    <display value="Varizellen-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="RoetelnMumpsImpfstoff" />
+    <display value="Röteln, Mumps-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtherieHaemophilusinfluenzaeBPertussisTetanusHepatitisBMeningokokkenACImpfstoff" />
+    <display value="Diphtherie, Haemophilus influenzae  B, Pertussis, Tetanus, Hepatitis B, Meningokokken  A + C-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtheriePertussisPoliomyelitisTetanusHepatitisBImpfstoff" />
+    <display value="Diphtherie-Pertussis, Poliomyelitis, Tetanus, Hepatitis B-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtherieHaemophilusinfluenzaeBPertussisTetanusHepatitisBImpfstoff" />
+    <display value="Diphtherie-Haemophilus influenzae  B, Pertussis, Tetanus, Hepatitis B-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="TyphusHepatitisAImpfstoff" />
+    <display value="Typhus-Hepatitis A-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtherieHaemophilusinfluenzaeBPertussisPoliomyelitisTetanusHepatitisBImpfstoff" />
+    <display value="Diphtherie-Haemophilus influenzae  B-Pertussis, Poliomyelitis, Tetanus, Hepatitis B-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="HaemophilusinfluenzaeBHepatitisBImpfstoff" />
+    <display value="Haemophilus influenzae B, Hepatitis B-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtherieHepatitisBTetanusImpfstoff" />
+    <display value="Diphtherie, Hepatitis B, Tetanus-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtherieHaemophilusinfluenzaeBPertussisPoliomyelitisTetanusImpfstoff" />
+    <display value="Diphtherie-Haemophilus influenzae  B, Pertussis, Poliomyelitis, Tetanus-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtherieHepatitisBPertussisTetanusImpfstoff" />
+    <display value="Diphtherie, Hepatitis B, Pertussis, Tetanus-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="HaemophilusinfluenzaeBPoliomyelitisImpfstoff" />
+    <display value="Haemophilus influenzae B,  Poliomyelitis-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtherieRoetelnTetanusImpfstoff" />
+    <display value="Diphtherie, Röteln, Tetanus-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtheriePertussisPoliomyelitisTetanusImpfstoff" />
+    <display value="Diphtherie, Pertussis, Poliomyelitis, Tetanus- Impfstoff" />
+  </concept>
+  <concept>
+    <code value="DiphtheriePoliomyelitisTetanusImpfstoff" />
+    <display value="Diphtherie, Poliomyelitis, Tetanus-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="MasernMumpsRoetelnVaricellaImpfstoff" />
+    <display value="Masern, Mumps, Röteln, Varicella-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="MasernRoetelnImpfstoff" />
+    <display value="Masern, Röteln-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="MasernMumpsRoetelnMMRImpfstoff" />
+    <display value="Masern, Mumps, Röteln (MMR) - Impfstoff" />
+  </concept>
+  <concept>
+    <code value="MasernMumpsImpfstoff" />
+    <display value="Masern, Mumps-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="HepatitisAundBImpfstoff" />
+    <display value="Hepatitis A und B-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="TetanusDiphtherieImpfstoff" />
+    <display value="Tetanus, Diphtherie-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="PneumokokkenHaemophilusinfluenzaeBImpfstoff" />
+    <display value="Pneumokokken, Haemophilus influenzae B-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="HaemophilusinfluenzaeBMeningokokkenCImpfstoff" />
+    <display value="Haemophilus influenzae B, Meningokokken C-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="HaemophilusinfluenzaeBPertussisImpfstoff" />
+    <display value="Haemophilus influenzae B, Pertussis-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="CholeraTyphusImpfstoff" />
+    <display value="Cholera, Typhus-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="JapanischeEnzephalitisImpfstoff" />
+    <display value="Japanische Enzephalitis-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="FSMEImpfstoff" />
+    <display value="FSME-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="MumpsImpfstoff" />
+    <display value="Mumps-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="PolioImpfstoff" />
+    <display value="Polio-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="RotaImpfstoff" />
+    <display value="Rota-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="TollwutImpfstoff" />
+    <display value="Tollwut-Impfstoff" />
+  </concept>
+  <concept>
+    <code value="HerpesZosterTotimpfstoff" />
+    <display value="Herpes Zoster-Totimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Pockenimpfstoff" />
+    <display value="Pockenimpfstoff" />
+  </concept>
+  <concept>
+    <code value="HPVImpfstoff" />
+    <display value="HPV Impfstoff" />
+  </concept>
+  <concept>
+    <code value="Gelbfieberimpfstoff" />
+    <display value="Gelbfieberimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Roetelnimpfstoff" />
+    <display value="Rötelnimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Masernimpfstoff" />
+    <display value="Masernimpfstoff" />
+  </concept>
+  <concept>
+    <code value="HepatitisAImpfstoff" />
+    <display value="Hepatitis A Impfstoff" />
+  </concept>
+  <concept>
+    <code value="HepatitisBImpfstoff" />
+    <display value="Hepatitis B Impfstoff" />
+  </concept>
+  <concept>
+    <code value="Influenzaimpfstoff" />
+    <display value="Influenzaimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Typhusimpfstoff" />
+    <display value="Typhusimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Tuberkuloseimpfstoff" />
+    <display value="Tuberkuloseimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Tetanusimpfstoff" />
+    <display value="Tetanusimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Pneumokokkenimpfstoff" />
+    <display value="Pneumokokkenimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Pestimpfstoff" />
+    <display value="Pestimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Pertussisimpfstoff" />
+    <display value="Pertussisimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Meningokokkenimpfstoff" />
+    <display value="Meningokokkenimpfstoff" />
+  </concept>
+  <concept>
+    <code value="HaemophilusinfluenzaeBImpfstoff" />
+    <display value="Haemophilus influenzae B Impfstoff" />
+  </concept>
+  <concept>
+    <code value="Diphtherieimpfstoff" />
+    <display value="Diphtherieimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Choleraimpfstoff" />
+    <display value="Choleraimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Milzbrandimpfstoff" />
+    <display value="Milzbrandimpfstoff" />
+  </concept>
+  <concept>
+    <code value="Immunglobulinenormalhuman" />
+    <display value="Immunglobuline, normal human" />
+  </concept>
+  <concept>
+    <code value="AntiDrhImmunglobulin" />
+    <display value="Anti-D(rh)-Immunglobulin" />
+  </concept>
+  <concept>
+    <code value="TetanusImmunglobulin" />
+    <display value="Tetanus-Immunglobulin" />
+  </concept>
+  <concept>
+    <code value="VaricellaZosterImmunglobulin" />
+    <display value="Varicella/Zoster-Immunglobulin" />
+  </concept>
+  <concept>
+    <code value="HepatitisBImmunglobulin" />
+    <display value="Hepatitis-B-Immunglobulin" />
+  </concept>
+  <concept>
+    <code value="TollwutImmunglobulin" />
+    <display value="Tollwut-Immunglobulin" />
+  </concept>
+  <concept>
+    <code value="CytomegalievirusImmunglobulin" />
+    <display value="Cytomegalievirus-Immunglobulin" />
+  </concept>
+  <concept>
+    <code value="Palivizumab" />
+    <display value="Palivizumab" />
+  </concept>
+  <concept>
+    <code value="Bezlotoxumab" />
+    <display value="Bezlotoxumab" />
+  </concept>
+  <concept>
+    <code value="Brucelloseimpfstoff" />
+    <display value="Brucelloseimpfstoff" />
+  </concept>
+  <concept>
+    <code value="HerpesZosterLebendimpfstoff" />
+    <display value="Herpes Zoster-Lebendimpfstoff" />
+  </concept>
+  <concept>
+    <code value="SonstigerImpfstoffhiernichtgelistet" />
+    <display value="Sonstiger Impfstoff (hier nicht gelistet)" />
+  </concept>
+</CodeSystem>

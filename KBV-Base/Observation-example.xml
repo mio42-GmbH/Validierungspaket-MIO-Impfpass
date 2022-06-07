@@ -1,0 +1,54 @@
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="56935c36-b0e9-4e1d-ad97-fbd51efd4ade" />
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Observation_Apgar_Score|1.1.1" />
+  </meta>
+  <status value="final" />
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20200731" />
+      <code value="169922007" />
+      <display value="Apgar score at 10 minutes (observable entity)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Apgar zum Zeitpunkt 10 Min. nach Geburt" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+    <coding>
+      <system value="http://loinc.org" />
+      <version value="2.68" />
+      <code value="9271-8" />
+      <display value="10 minute Apgar Score">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Apgar zum Zeitpunkt 10 Min. nach Geburt" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </code>
+  <subject>
+    <reference value="urn:uuid:6a15cff6-3cc1-4bf2-ab66-1cc6316e6777" />
+  </subject>
+  <effectiveDateTime value="2020-01-02" />
+  <performer>
+    <reference value="urn:uuid:8ad1ee6c-6164-493a-be52-c43cf49e9916" />
+  </performer>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct" />
+      <version value="http://snomed.info/sct/900000000000207008/version/20200731" />
+      <code value="77714001" />
+      <display value="Apgar score 0 (finding)">
+        <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+          <extension url="content">
+            <valueString value="Apgar 0" />
+          </extension>
+        </extension>
+      </display>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

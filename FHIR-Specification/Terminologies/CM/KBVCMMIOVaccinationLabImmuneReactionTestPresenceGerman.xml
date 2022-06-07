@@ -1,0 +1,279 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_Vaccination_Lab_ImmuneReaction_Test_Presence_German" />
+  <version value="1.1.0" />
+  <name value="KBV_CM_MIO_Vaccination_Lab_ImmuneReaction_Test_Presence_German" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <description value="Diese Conceptmap dient dem Mapping der Loinc-Codes zur Art der Immunreaktion auf die deutschen Bezeichnungen" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <group>
+    <source value="http://loinc.org" />
+    <target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Lab_ImmuneReaction_Test_Presence_German" />
+    <element>
+      <code value="22600-1" />
+      <display value="Varicella zoster virus Ab [Presence] in Serum" />
+      <target>
+        <code value="VarizellenAntikoerpernachweis" />
+        <display value="Varizellen Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="26643-7" />
+      <display value="Clostridium tetani toxoid Ab [Presence] in Serum" />
+      <target>
+        <code value="TetanusAntikoerpernachweis" />
+        <display value="Tetanus Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="30546-6" />
+      <display value="Polio virus 1 Ab [Presence] in Serum" />
+      <target>
+        <code value="PolioAntikoerpernachweis" />
+        <display value="Polio Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="31998-8" />
+      <display value="Bordetella pertussis Ab [Presence] in Serum" />
+      <target>
+        <code value="PertussisAntikoerpernachweis" />
+        <display value="Pertussis Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="31503-6" />
+      <display value="Mumps virus Ab [Presence] in Serum" />
+      <target>
+        <code value="MumpsAntikoerpernachweis" />
+        <display value="Mumps Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="17322-9" />
+      <display value="Neisseria meningitidis Ab [Presence] in Serum" />
+      <target>
+        <code value="MeningokokkenAntikoerpernachweis" />
+        <display value="Meningokokken Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="46197-0" />
+      <display value="Measles virus Ab [Presence] in Serum" />
+      <target>
+        <code value="MasernAntikoerpernachweis" />
+        <display value="Masern Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="22322-2" />
+      <display value="Hepatitis B virus surface Ab [Presence] in Serum" />
+      <target>
+        <code value="HepatitisBAntikoerpernachweis" />
+        <display value="Hepatitis B Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="20575-7" />
+      <display value="Hepatitis A virus Ab [Presence] in Serum" />
+      <target>
+        <code value="HepatitisAAntikoerpernachweis" />
+        <display value="Hepatitis A Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="26630-4" />
+      <display value="Corynebacterium diphtheriae toxin Ab [Presence] in Serum" />
+      <target>
+        <code value="DiphtherieAntikoerpernachweis" />
+        <display value="Diphtherie Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="22496-4" />
+      <display value="Rubella virus Ab [Presence] in Serum" />
+      <target>
+        <code value="RoetelnAntikoerpernachweis" />
+        <display value="Röteln Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="30553-2" />
+      <display value="Rabies virus Ab [Presence] in Serum" />
+      <target>
+        <code value="TollwutAntikoerperbestimmung" />
+        <display value="Tollwut Antikörperbestimmung" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+  <group>
+    <source value="http://snomed.info/sct" />
+    <target value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Lab_ImmuneReaction_Test_Presence_German" />
+    <element>
+      <code value="268376005" />
+      <display value="Mantoux: positive (finding)" />
+      <target>
+        <code value="TuberkuloseMendelMantouxTestpositiv" />
+        <display value="Tuberkulose - Mendel-Mantoux-Test positiv" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="268375009" />
+      <display value="Mantoux: negative (finding)" />
+      <target>
+        <code value="TuberkuloseMendelMantouxTestnegativ" />
+        <display value="Tuberkulose - Mendel-Mantoux-Test negativ" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="440662009" />
+      <display value="Interferon gamma assay positive (finding)" />
+      <target>
+        <code value="TuberkuloseInterferongammaassaypositiv" />
+        <display value="Tuberkulose - Interferon gamma assay positiv" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="440661002" />
+      <display value="Interferon gamma assay negative (finding)" />
+      <target>
+        <code value="TuberkuloseInterferongammaassaynegativ" />
+        <display value="Tuberkulose - Interferon gamma assay negativ" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:246093002=259858000,370134009=123029007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity) : Component (attribute) = Varicella-zoster virus antibody (substance) , Time aspect (attribute) = Single point in time (qualifier value) , Scale type (attribute) = Ordinal value (qualifier value) , Inheres in (attribute) = Plasma (substance) , Property (attribute) = Presence (property) (qualifier value) , Direct site (attribute) = Serum specimen (specimen)" />
+      <target>
+        <code value="VarizellenAntikoerpernachweis" />
+        <display value="Varizellen Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,246093002=259833005,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Clostridium tetani toxoid antibody (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="TetanusAntikoerpernachweis" />
+        <display value="Tetanus Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,246093002=120856009,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Human poliovirus 1 antibody (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="PolioAntikoerpernachweis" />
+        <display value="Polio Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:246093002=120662001,370134009=123029007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Component (attribute)=Bordetella pertussis antibody (substance),Time aspect (attribute)=Single point in time (qualifier value),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="PertussisAntikoerpernachweis" />
+        <display value="Pertussis Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:246093002=120721000,370134009=123029007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Component (attribute)=Mumps virus antibody (substance),Time aspect (attribute)=Single point in time (qualifier value),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="MumpsAntikoerpernachweis" />
+        <display value="Mumps Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,246093002=120871008,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Neisseria meningitidis antibody (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="MeningokokkenAntikoerpernachweis" />
+        <display value="Meningokokken Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,246093002=120969007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Measles virus antibody (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="MasernAntikoerpernachweis" />
+        <display value="Masern Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:246093002=120886002,370134009=123029007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity): Component (attribute) = Haemophilus influenzae type B antibody (substance) , Time aspect (attribute) = Single point in time (qualifier value) , Scale type (attribute) = Ordinal value (qualifier value) , Inheres in (attribute) = Plasma (substance) , Property (attribute) = Presence (property) (qualifier value) , Direct site (attribute) = Serum specimen (specimen)" />
+      <target>
+        <code value="HaemophilusinfluenzaeBAntikoerpernachweis" />
+        <display value="Haemophilus influenzae B Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,246093002=122450004,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity) : Time aspect (attribute) = Single point in time (qualifier value) , Component (attribute) = Antibody to hepatitis B virus (substance) , Scale type (attribute) = Ordinal value (qualifier value) , Inheres in (attribute) = Plasma (substance) , Property (attribute) = Presence (property) (qualifier value) , Direct site (attribute) = Serum specimen (specimen)" />
+      <target>
+        <code value="HepatitisBAntikoerpernachweis" />
+        <display value="Hepatitis B Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,246093002=32609007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Component (attribute)=Antibody to hepatitis A virus (substance),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="HepatitisAAntikoerpernachweis" />
+        <display value="Hepatitis A Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,370132008=117363000,704319004=50863008,246093002=259834004,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Time aspect (attribute)=Single point in time (qualifier value),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Component (attribute)=Corynebacterium diphtheriae toxoid antibody (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="DiphtherieAntikoerpernachweis" />
+        <display value="Diphtherie Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:246093002=120737006,370134009=123029007,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity):Component (attribute)=Rubella virus antibody (substance),Time aspect (attribute)=Single point in time (qualifier value),Scale type (attribute)=Ordinal value (qualifier value),Inheres in (attribute)=Plasma (substance),Property (attribute)=Presence (property) (qualifier value),Direct site (attribute)=Serum specimen (specimen)" />
+      <target>
+        <code value="RoetelnAntikoerpernachweis" />
+        <display value="Röteln Antikörpernachweis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="363787002:370134009=123029007,246093002=120850003,370132008=117363000,704319004=50863008,370130000=705057003,704327008=119364003" />
+      <display value="Observable entity (observable entity) : Time aspect (attribute) = Single point in time (qualifier value) , Component (attribute) = Rabies virus antibody (substance) , Scale type (attribute) = Ordinal value (qualifier value) , Inheres in (attribute) = Plasma (substance) , Property (attribute) = Presence (property) (qualifier value) , Direct site (attribute) = Serum specimen (specimen)" />
+      <target>
+        <code value="TollwutAntikoerperbestimmung" />
+        <display value="Tollwut Antikörperbestimmung" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

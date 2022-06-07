@@ -1,0 +1,620 @@
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_Vaccination_Vaccine_ATC_Snomed" />
+  <version value="1.1.0" />
+  <name value="KBV_CM_MIO_Vaccination_Vaccine_ATC_Snomed" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Diese Conceptmap dient dem Mapping der Impfstoffcodes zwischen Snomed CT und ATC" />
+  <copyright value="Im folgenden Profil können Codes aus den Codesystemen Snomed, Loinc oder Ucum enthalten sein, die dem folgenden Urheberrecht unterliegen: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license. This material contains content from LOINC (http://loinc.org). LOINC is copyright © 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the license at http://loinc.org/license. LOINC® is a registered United States trademark of Regenstrief Institute, Inc. This product includes all or a portion of the UCUM table, UCUM codes, and UCUM definitions or is derived from it, subject to a license from Regenstrief Institute, Inc. and The UCUM Organization. Your use of the UCUM table, UCUM codes, UCUM definitions also is subject to this license, a copy of which is available at â€‹http://unitsofmeasure.org. The current complete UCUM table, UCUM Specification are available for download at http://unitsofmeasure.org. The UCUM table and UCUM codes are copyright © 1995-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. THE UCUM TABLE (IN ALL FORMATS), UCUM DEFINITIONS, AND SPECIFICATION ARE PROVIDED &quot;AS IS.&quot; ANY EXPRESS OR IMPLIED WARRANTIES ARE DISCLAIMED, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE." />
+  <group>
+    <source value="http://snomed.info/sct" />
+    <sourceVersion value="http://snomed.info/sct/900000000000207008/version/20200731" />
+    <target value="http://fhir.de/CodeSystem/dimdi/atc" />
+    <element>
+      <code value="714569001" />
+      <display value="Product containing normal immunoglobulin human (medicinal product)" />
+      <target>
+        <code value="J06BA" />
+        <display value="Immunglobuline, normal human" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="786224004" />
+      <display value="Product containing human anti-D immunoglobulin (medicinal product)" />
+      <target>
+        <code value="J06BB01" />
+        <display value="Anti-D(rh)-Immunglobulin" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="384706007" />
+      <display value="Product containing tetanus antitoxin (medicinal product)" />
+      <target>
+        <code value="J06BB02" />
+        <display value="Tetanus-Immunglobulin" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="62294009" />
+      <display value="Product containing Varicella-zoster virus antibody (medicinal product)" />
+      <target>
+        <code value="J06BB03" />
+        <display value="Varicella/Zoster-Immunglobulin" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="9542007" />
+      <display value="Product containing Hepatitis B surface antigen immunoglobulin (medicinal product)" />
+      <target>
+        <code value="J06BB04" />
+        <display value="Hepatitis-B-Immunglobulin" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="80834004" />
+      <display value="Product containing rabies human immune globulin (medicinal product)" />
+      <target>
+        <code value="J06BB05" />
+        <display value="Tollwut-Immunglobulin" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="9778000" />
+      <display value="Product containing Cytomegalovirus antibody (medicinal product)" />
+      <target>
+        <code value="J06BB09" />
+        <display value="Cytomegalievirus-Immunglobulin" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="108725001" />
+      <display value="Product containing palivizumab (medicinal product)" />
+      <target>
+        <code value="J06BB16" />
+        <display value="Palivizumab" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="763703008" />
+      <display value="Product containing bezlotoxumab (medicinal product)" />
+      <target>
+        <code value="J06BB21" />
+        <display value="Bezlotoxumab" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="1119305005" />
+      <display value="Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 antigen (medicinal product)" />
+      <target>
+        <code value="J07BX03" />
+        <display value="Covid-19-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="1119349007" />
+      <display value="Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)" />
+      <target>
+        <code value="J07BX03" />
+        <display value="Covid-19-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871875004" />
+      <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+      <target>
+        <code value="J07AJ52" />
+        <display value="Pertussis, gereinigtes Antigen, Kombinationen mit Toxoiden" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="37146000" />
+      <display value="Typhus vaccine (product)" />
+      <target>
+        <code value="J07AR" />
+        <display value="Typhus (exanthematicus)-Impfstoff" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="414004005" />
+      <display value="Diphtheria + tetanus + pertussis + poliomyelitis + haemophilus influenzae b vaccine (product)" />
+      <target>
+        <code value="J07CA06" />
+        <display value="Diphtherie-Haemophilus influenzae B-Pertussis-Poliomyelitis-Tetanus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="2221000221107" />
+      <display value="Vaccine product containing only live attenuated Human alphaherpesvirus 3 antigen (medicinal product)" />
+      <target>
+        <code value="J07BK01" />
+        <display value="Varicella, lebend abgeschwächt" />
+        <equivalence value="equivalent" />
+      </target>
+      <target>
+        <code value="J07BK02" />
+        <display value="Zoster Virus, lebend abgeschwächt" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836498007+836388000" />
+      <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BJ51" />
+        <display value="Röteln, Kombinationen mit Mumps, lebend abgeschwächt" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871729003+836380007+601000221108+863911006+836374004+871871008" />
+      <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing only Neisseria meningitidis serogroup A and C antigens (medicinal product)" />
+      <target>
+        <code value="J07CA13" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B-Meningokokken  A + C" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871891001" />
+      <display value="Vaccine product containing only acellular Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Hepatitis B virus and inactivated whole Human poliovirus antigens (medicinal product)" />
+      <target>
+        <code value="J07CA12" />
+        <display value="Diphtherie-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871729003+836380007+601000221108+863911006+836374004" />
+      <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+      <target>
+        <code value="J07CA11" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Tetanus-Hepatitis B" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871804001" />
+      <display value="Vaccine product containing only Hepatitis A virus and Salmonella enterica subspecies enterica serovar Typhi antigens (medicinal product)" />
+      <target>
+        <code value="J07CA10" />
+        <display value="Typhus-Hepatitis A" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871895005" />
+      <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Hepatitis B virus and Human poliovirus antigens (medicinal product)" />
+      <target>
+        <code value="J07CA09" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871806004" />
+      <display value="Vaccine product containing only Haemophilus influenzae type B and Hepatitis B virus antigens (medicinal product)" />
+      <target>
+        <code value="J07CA08" />
+        <display value="Haemophilus influenzae B und Hepatitis B" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871729003+836374004+863911006" />
+      <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+      <target>
+        <code value="J07CA07" />
+        <display value="Diphtherie-Hepatitis B-Tetanus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871887006" />
+      <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Haemophilus influenzae type B and Human poliovirus antigens (medicinal product)" />
+      <target>
+        <code value="J07CA06" />
+        <display value="Diphtherie-Haemophilus influenzae  B-Pertussis-Poliomyelitis-Tetanus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="863911006+836374004+601000221108+836381006" />
+      <display value="Vaccine product containing Clostridium tetani antigen (medicinal product) + Vaccine product containing Hepatitis B virus antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product) + Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+      <target>
+        <code value="J07CA05" />
+        <display value="Diphtherie-Hepatitis B-Pertussis-Tetanus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836380007+1031000221108" />
+      <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Human poliovirus antigen (medicinal product)" />
+      <target>
+        <code value="J07CA04" />
+        <display value="Haemophilus influenzae B und Poliomyelitis" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871729003+836388000+863911006" />
+      <display value="Vaccine product containing only Corynebacterium diphtheriae antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product) + Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+      <target>
+        <code value="J07CA03" />
+        <display value="Diphtherie-Röteln-Tetanus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871878002" />
+      <display value="Vaccine product containing only Bordetella pertussis and Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+      <target>
+        <code value="J07CA02" />
+        <display value="Diphtherie-Pertussis-Poliomyelitis-Tetanus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871837004" />
+      <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae and Human poliovirus antigens (medicinal product)" />
+      <target>
+        <code value="J07CA01" />
+        <display value="Diphtherie-Poliomyelitis-Tetanus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871908002" />
+      <display value="Vaccine product containing only Human alphaherpesvirus 3 and Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+      <target>
+        <code value="J07BD54" />
+        <display value="Masern, Kombinationen mit Mumps, Röteln und Varicella,  lebend abgeschwächt" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836382004+836388000" />
+      <display value="Vaccine product containing Measles morbillivirus antigen (medicinal product) + Vaccine product containing Rubella virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BD53" />
+        <display value="Masern, Kombinationen mit Röteln, lebend abgeschwächt" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871831003" />
+      <display value="Vaccine product containing only Measles morbillivirus and Mumps orthorubulavirus and Rubella virus antigens (medicinal product)" />
+      <target>
+        <code value="J07BD52" />
+        <display value="Masern, Kombinationen mit Mumps und Röteln,  lebend abgeschwächt" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836498007+836382004" />
+      <display value="Vaccine product containing Mumps orthorubulavirus antigen (medicinal product) + Vaccine product containing Measles morbillivirus antigen (medicinal product)" />
+      <target>
+        <code value="J07BD51" />
+        <display value="Masern, Kombinationen mit Mumps, lebend abgeschwächt" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871803007" />
+      <display value="Vaccine product containing only Hepatitis A and Hepatitis B virus antigens (medicinal product)" />
+      <target>
+        <code value="J07BC20" />
+        <display value="Kombinationen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871826000" />
+      <display value="Vaccine product containing only Clostridium tetani and Corynebacterium diphtheriae antigens (medicinal product)" />
+      <target>
+        <code value="J07AM51" />
+        <display value="Tetanus-Toxoid, Kombinationen mit Diphtherie-Toxoid" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836398006+836380007" />
+      <display value="Vaccine product containing Streptococcus pneumoniae antigen (medicinal product) + Vaccine product containing Haemophilus influenzae type B antigen (medicinal product)" />
+      <target>
+        <code value="J07AL52" />
+        <display value="Pneumokokken, gereinigtes Polysaccharid-Antigen  und Haemophilus influenzae B, konjugiert" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836500008" />
+      <display value="Vaccine product containing only Haemophilus influenzae type B and Neisseria meningitidis serogroup C antigens (medicinal product)" />
+      <target>
+        <code value="J07AG53" />
+        <display value="Haemophilus influenzae B, Kombinationen mit  Meningokokken C, konjugiert" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836380007+601000221108" />
+      <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product) + Vaccine product containing Bordetella pertussis antigen (medicinal product)" />
+      <target>
+        <code value="J07AG52" />
+        <display value="Haemophilus influenzae B, Kombinationen mit Pertussis und Toxoiden" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836383009+836390004" />
+      <display value="Vaccine product containing Vibrio cholerae antigen (medicinal product) + Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" />
+      <target>
+        <code value="J07AE51" />
+        <display value="Cholera, Kombinationen mit Typhus-Impfstoff,  inaktiviert, ganze Zelle" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836378001" />
+      <display value="Vaccine product containing Japanese encephalitis virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BA02" />
+        <display value="Encephalitis, japanische, inaktiviert, ganzes Virus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836403007" />
+      <display value="Vaccine product containing Tick-borne encephalitis virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BA01" />
+        <display value="FSME, inaktiviert, ganzes Virus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="871738001" />
+      <display value="Vaccine product containing only live attenuated Mumps orthorubulavirus antigen (medicinal product)" />
+      <target>
+        <code value="J07BE" />
+        <display value="Mumps-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="1031000221108" />
+      <display value="Vaccine product containing Human poliovirus antigen (medicinal product)" />
+      <target>
+        <code value="J07BF" />
+        <display value="Poliomyelitis-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836387005" />
+      <display value="Vaccine product containing Rotavirus antigen (medicinal product)" />
+      <target>
+        <code value="J07BH" />
+        <display value="Rotavirus-Diarrhoe-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836393002" />
+      <display value="Vaccine product containing Rabies lyssavirus antigen (medicinal product)" />
+      <target>
+        <code value="J07BG" />
+        <display value="Tollwut-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836495005" />
+      <display value="Vaccine product containing Human alphaherpesvirus 3 antigen (medicinal product)" />
+      <target>
+        <code value="J07BK03" />
+        <display value="Zoster Virus, gereinigtes Antigen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836389008" />
+      <display value="Vaccine product containing Vaccinia virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BX01" />
+        <display value="Pocken-Impfstoff, lebend, modifiziert" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836379009" />
+      <display value="Vaccine product containing Human papillomavirus antigen (medicinal product)" />
+      <target>
+        <code value="J07BM" />
+        <display value="Papillomvirus-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836385002" />
+      <display value="Vaccine product containing Yellow fever virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BL" />
+        <display value="Gelbfieber-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836388000" />
+      <display value="Vaccine product containing Rubella virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BJ" />
+        <display value="Röteln-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836382004" />
+      <display value="Vaccine product containing Measles morbillivirus antigen (medicinal product)" />
+      <target>
+        <code value="J07BD" />
+        <display value="Masern-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836375003" />
+      <display value="Vaccine product containing Hepatitis A virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BC02" />
+        <display value="Hepatitis A, inaktiviert, ganzes Virus" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836374004" />
+      <display value="Vaccine product containing Hepatitis B virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BC01" />
+        <display value="Hepatitis B, gereinigtes Antigen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836377006" />
+      <display value="Vaccine product containing Influenza virus antigen (medicinal product)" />
+      <target>
+        <code value="J07BB" />
+        <display value="Influenza-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836390004" />
+      <display value="Vaccine product containing Salmonella enterica subspecies enterica serovar Typhi antigen (medicinal product)" />
+      <target>
+        <code value="J07AP" />
+        <display value="Typhus-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836402002" />
+      <display value="Vaccine product containing live attenuated Mycobacterium bovis antigen (medicinal product)" />
+      <target>
+        <code value="J07AN" />
+        <display value="Tuberkulose-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="863911006" />
+      <display value="Vaccine product containing Clostridium tetani antigen (medicinal product)" />
+      <target>
+        <code value="J07AM" />
+        <display value="Tetanus-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836398006" />
+      <display value="Vaccine product containing Streptococcus pneumoniae antigen (medicinal product)" />
+      <target>
+        <code value="J07AL" />
+        <display value="Pneumokokken-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="840549009" />
+      <display value="Vaccine product containing Yersinia pestis antigen (medicinal product)" />
+      <target>
+        <code value="J07AK" />
+        <display value="Pest-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="601000221108" />
+      <display value="Vaccine product containing Bordetella pertussis antigen (medicinal product)" />
+      <target>
+        <code value="J07AJ" />
+        <display value="Pertussis-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836401009" />
+      <display value="Vaccine product containing Neisseria meningitidis antigen (medicinal product)" />
+      <target>
+        <code value="J07AH" />
+        <display value="Meningokokken-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836380007" />
+      <display value="Vaccine product containing Haemophilus influenzae type B antigen (medicinal product)" />
+      <target>
+        <code value="J07AG" />
+        <display value="Haemophilus influenzae B-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836381006" />
+      <display value="Vaccine product containing Corynebacterium diphtheriae antigen (medicinal product)" />
+      <target>
+        <code value="J07AF" />
+        <display value="Diphtherie-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836383009" />
+      <display value="Vaccine product containing Vibrio cholerae antigen (medicinal product)" />
+      <target>
+        <code value="J07AE" />
+        <display value="Cholera-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="836384003" />
+      <display value="Vaccine product containing Bacillus anthracis antigen (medicinal product)" />
+      <target>
+        <code value="J07AC" />
+        <display value="Milzbrand-Impfstoffe" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+    <element>
+      <code value="7230005" />
+      <display value="Brucella vaccine (product)" />
+      <target>
+        <code value="J07AD01" />
+        <display value="Brucella-Antigen" />
+        <equivalence value="equivalent" />
+      </target>
+    </element>
+  </group>
+</ConceptMap>

@@ -1,0 +1,169 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_Vaccination_Bundle_Entry" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Copyright © [2020], Kassenärztliche Bundesvereinigung (KBV). All rights reserved." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="v2" />
+    <uri value="http://hl7.org/v2" />
+    <name value="HL7 v2 Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="cda" />
+    <uri value="http://hl7.org/v3/cda" />
+    <name value="CDA (R2)" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Bundle" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Bundle" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Bundle">
+      <path value="Bundle" />
+      <short value="Bündelung notwendiger Ressourcen" />
+      <definition value="Dieses Profil dient als bündelndes Element. Das Bundle kann als Klammer-Ressource verstanden werden, die die notwendigen Ressourcen zusammenfügt. Diese Ressource und die Integrierten können dann mit einer Signatur versehen werden.&#xD;&#xA;&#xD;&#xA;Das Bundle umfasst in dieser Anwendung einen oder mehrere Impfeinträge, also Impfzeilen. Diese können aus einer aktuellen Impfung stammen oder nachgetragen werden." />
+      <constraint>
+        <key value="TypeComposition" />
+        <severity value="error" />
+        <human value="Es muss genau eine Composition_Prime oder Composition_Addendum enthalten sein" />
+        <expression value="entry.where(resource.meta.profile='https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Prime|1.1.0' or resource.meta.profile='https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Addendum|1.1.0').count()=1" />
+        <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry" />
+      </constraint>
+      <constraint>
+        <key value="OneComposition" />
+        <severity value="error" />
+        <human value="Es darf genau eine Composition geben" />
+        <expression value="entry.select(resource as Composition).count()=1" />
+        <source value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry" />
+      </constraint>
+    </element>
+    <element id="Bundle.meta">
+      <path value="Bundle.meta" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.meta.versionId">
+      <path value="Bundle.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.meta.source">
+      <path value="Bundle.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.meta.profile">
+      <path value="Bundle.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry|1.1.0" />
+    </element>
+    <element id="Bundle.meta.security">
+      <path value="Bundle.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.meta.tag">
+      <path value="Bundle.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.implicitRules">
+      <path value="Bundle.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.language">
+      <path value="Bundle.language" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.identifier">
+      <path value="Bundle.identifier" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.identifier.use">
+      <path value="Bundle.identifier.use" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.identifier.type">
+      <path value="Bundle.identifier.type" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.identifier.system">
+      <path value="Bundle.identifier.system" />
+      <min value="1" />
+      <fixedUri value="urn:ietf:rfc:3986" />
+    </element>
+    <element id="Bundle.identifier.value">
+      <path value="Bundle.identifier.value" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.identifier.period">
+      <path value="Bundle.identifier.period" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.identifier.assigner">
+      <path value="Bundle.identifier.assigner" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.type">
+      <path value="Bundle.type" />
+      <fixedCode value="document" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.timestamp">
+      <path value="Bundle.timestamp" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.total">
+      <path value="Bundle.total" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.link">
+      <path value="Bundle.link" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry">
+      <path value="Bundle.entry" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Bundle.entry.link">
+      <path value="Bundle.entry.link" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry.fullUrl">
+      <path value="Bundle.entry.fullUrl" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry.resource">
+      <path value="Bundle.entry.resource" />
+      <min value="1" />
+    </element>
+    <element id="Bundle.entry.search">
+      <path value="Bundle.entry.search" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry.request">
+      <path value="Bundle.entry.request" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.entry.response">
+      <path value="Bundle.entry.response" />
+      <max value="0" />
+    </element>
+    <element id="Bundle.signature">
+      <path value="Bundle.signature" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

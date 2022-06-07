@@ -1,0 +1,108 @@
+<Patient xmlns="http://hl7.org/fhir">
+  <meta>
+    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_Base_Patient|1.1.1" />
+  </meta>
+  <!-- Versichertennummer kvk -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_Base_identifier_type" />
+        <code value="kvk" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/gkv/kvk-versichertennummer" />
+    <value value="F123456784" />
+  </identifier>
+  <!-- pid -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="MR" />
+      </coding>
+    </type>
+    <system value="http://www.acme.com/identifiers/patient" />
+    <value value="23" />
+  </identifier>
+  <!-- Reisepassnummer -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+        <code value="PPN" />
+      </coding>
+    </type>
+    <value value="1234" />
+  </identifier>
+  <!-- Versichertennummer PKV -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+        <code value="PKV" />
+      </coding>
+    </type>
+    <value value="1234567890" />
+    <assigner>
+      <display value="KK" />
+    </assigner>
+  </identifier>
+  <!-- Versicherten ID GKV -->
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+        <code value="GKV" />
+      </coding>
+    </type>
+    <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+    <value value="1234567890" />
+  </identifier>
+  <active value="true" />
+  <name>
+    <use value="official" />
+    <text value="Peter Rot" />
+    <family value="Rot">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Rot" />
+      </extension>
+    </family>
+    <given value="Peter" />
+  </name>
+  <name>
+    <use value="maiden" />
+    <text value="Grün" />
+    <family value="Grün">
+      <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+        <valueString value="Grün" />
+      </extension>
+    </family>
+  </name>
+  <gender value="male" />
+  <birthDate value="1935-06-22" />
+  <address>
+    <type value="both" />
+    <line value="Musterstr. 1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="1" />
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="Musterstr." />
+      </extension>
+    </line>
+    <city value="Darmstadt" />
+    <postalCode value="64283" />
+    <country value="D" />
+  </address>
+  <address>
+    <type value="postal" />
+    <line value="124ji">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="124ji" />
+      </extension>
+    </line>
+    <city value="Köln" />
+    <postalCode value="15457" />
+    <country value="D" />
+  </address>
+</Patient>

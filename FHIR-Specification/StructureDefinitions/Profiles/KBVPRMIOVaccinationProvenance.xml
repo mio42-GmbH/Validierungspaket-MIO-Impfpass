@@ -1,0 +1,288 @@
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Provenance" />
+  <version value="1.1.0" />
+  <name value="KBV_PR_MIO_Vaccination_Provenance" />
+  <status value="active" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <copyright value="Hinweis: This material includes SNOMED Clinical Terms® (SNOMED CT®) which is used by permission of SNOMED International. All rights reserved. SNOMED CT®, was originally created by The College of American Pathologists. SNOMED and SNOMED CT are registered trademarks of SNOMED International. Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license." />
+  <fhirVersion value="4.0.1" />
+  <mapping>
+    <identity value="workflow" />
+    <uri value="http://hl7.org/fhir/workflow" />
+    <name value="Workflow Pattern" />
+  </mapping>
+  <mapping>
+    <identity value="rim" />
+    <uri value="http://hl7.org/v3" />
+    <name value="RIM Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="w3c.prov" />
+    <uri value="http://www.w3.org/ns/prov" />
+    <name value="W3C PROV" />
+  </mapping>
+  <mapping>
+    <identity value="w5" />
+    <uri value="http://hl7.org/fhir/fivews" />
+    <name value="FiveWs Pattern Mapping" />
+  </mapping>
+  <mapping>
+    <identity value="fhirauditevent" />
+    <uri value="http://hl7.org/fhir/auditevent" />
+    <name value="FHIR AuditEvent Mapping" />
+  </mapping>
+  <kind value="resource" />
+  <abstract value="false" />
+  <type value="Provenance" />
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Provenance" />
+  <derivation value="constraint" />
+  <differential>
+    <element id="Provenance">
+      <path value="Provenance" />
+      <short value="Herkunft von Ressourcen" />
+      <definition value="Mit diesem Profil soll die Herkunft von Ressourcen, die in diesem Projekt spezifiziert worden sind, beschrieben werden. Es kann also die Informationsquelle der Inhalte dieser Ressourcen angegeben werden." />
+    </element>
+    <element id="Provenance.meta">
+      <path value="Provenance.meta" />
+      <min value="1" />
+    </element>
+    <element id="Provenance.meta.versionId">
+      <path value="Provenance.meta.versionId" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.meta.lastUpdated">
+      <path value="Provenance.meta.lastUpdated" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.meta.source">
+      <path value="Provenance.meta.source" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.meta.profile">
+      <path value="Provenance.meta.profile" />
+      <min value="1" />
+      <max value="1" />
+      <fixedCanonical value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Provenance|1.1.0" />
+    </element>
+    <element id="Provenance.meta.security">
+      <path value="Provenance.meta.security" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.meta.tag">
+      <path value="Provenance.meta.tag" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.implicitRules">
+      <path value="Provenance.implicitRules" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.language">
+      <path value="Provenance.language" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.contained">
+      <path value="Provenance.contained" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.target">
+      <path value="Provenance.target" />
+      <type>
+        <code value="Reference" />
+        <targetProfile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Condition|1.1.0" />
+      </type>
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.target.reference">
+      <path value="Provenance.target.reference" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.target.type">
+      <path value="Provenance.target.type" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.target.identifier">
+      <path value="Provenance.target.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.target.display">
+      <path value="Provenance.target.display" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.occurred[x]">
+      <path value="Provenance.occurred[x]" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.recorded">
+      <path value="Provenance.recorded" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.policy">
+      <path value="Provenance.policy" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.location">
+      <path value="Provenance.location" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.reason">
+      <path value="Provenance.reason" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.activity">
+      <path value="Provenance.activity" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.agent">
+      <path value="Provenance.agent" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.type">
+      <path value="Provenance.agent.type" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.agent.role">
+      <path value="Provenance.agent.role" />
+      <short value="Quelle der Information" />
+      <definition value="Quelle der Information" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+      <binding>
+        <strength value="required" />
+        <valueSet value="https://fhir.kbv.de/ValueSet/KBV_VS_MIO_Vaccination_Source_of_Information|1.1.0" />
+      </binding>
+    </element>
+    <element id="Provenance.agent.role.coding">
+      <path value="Provenance.agent.role.coding" />
+      <min value="1" />
+      <max value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.role.coding.system">
+      <path value="Provenance.agent.role.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.role.coding.code">
+      <path value="Provenance.agent.role.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.role.coding.display">
+      <path value="Provenance.agent.role.coding.display" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.role.coding.display.extension">
+      <path value="Provenance.agent.role.coding.display.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Provenance.agent.role.coding.display.extension:anzeigenameCodeSnomed">
+      <path value="Provenance.agent.role.coding.display.extension" />
+      <sliceName value="anzeigenameCodeSnomed" />
+      <type>
+        <code value="Extension" />
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German|1.1.1" />
+      </type>
+    </element>
+    <element id="Provenance.agent.role.coding.display.extension:anzeigenameCodeSnomed.extension">
+      <path value="Provenance.agent.role.coding.display.extension.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Provenance.agent.role.coding.display.extension:anzeigenameCodeSnomed.extension:content">
+      <path value="Provenance.agent.role.coding.display.extension.extension" />
+      <sliceName value="content" />
+    </element>
+    <element id="Provenance.agent.role.coding.display.extension:anzeigenameCodeSnomed.extension:content.value[x]:valueString">
+      <path value="Provenance.agent.role.coding.display.extension.extension.value[x]" />
+      <sliceName value="valueString" />
+      <short value="Anzeigename" />
+      <definition value="In diesem Attribut sollen die entsprechende deutsche Bezeichnung des Snomed-Codes aus der Conceptmap eingetragen werden, also in diesem Fall den Displaynamen des Targetsystems aus https://fhir.kbv.de/ConceptMap/KBV_CM_MIO_Vaccination_Source_of_Information_German" />
+    </element>
+    <element id="Provenance.agent.role.text">
+      <path value="Provenance.agent.role.text" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.agent.who">
+      <path value="Provenance.agent.who" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Provenance.agent.who.extension">
+      <path value="Provenance.agent.who.extension" />
+      <slicing>
+        <discriminator>
+          <type value="value" />
+          <path value="url" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Provenance.agent.who.extension:data-absent-reason">
+      <path value="Provenance.agent.who.extension" />
+      <sliceName value="data-absent-reason" />
+      <min value="1" />
+      <type>
+        <code value="Extension" />
+        <profile value="http://hl7.org/fhir/StructureDefinition/data-absent-reason" />
+      </type>
+    </element>
+    <element id="Provenance.agent.who.extension:data-absent-reason.value[x]">
+      <path value="Provenance.agent.who.extension.value[x]" />
+      <slicing>
+        <discriminator>
+          <type value="type" />
+          <path value="$this" />
+        </discriminator>
+        <rules value="open" />
+      </slicing>
+    </element>
+    <element id="Provenance.agent.who.extension:data-absent-reason.value[x]:valueCode">
+      <path value="Provenance.agent.who.extension.value[x]" />
+      <sliceName value="valueCode" />
+      <fixedCode value="unknown" />
+    </element>
+    <element id="Provenance.agent.who.reference">
+      <path value="Provenance.agent.who.reference" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.agent.who.type">
+      <path value="Provenance.agent.who.type" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.agent.who.identifier">
+      <path value="Provenance.agent.who.identifier" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.agent.who.display">
+      <path value="Provenance.agent.who.display" />
+      <min value="1" />
+      <fixedString value="unknown" />
+    </element>
+    <element id="Provenance.agent.onBehalfOf">
+      <path value="Provenance.agent.onBehalfOf" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.entity">
+      <path value="Provenance.entity" />
+      <max value="0" />
+    </element>
+    <element id="Provenance.signature">
+      <path value="Provenance.signature" />
+      <max value="0" />
+    </element>
+  </differential>
+</StructureDefinition>

@@ -1,0 +1,80 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+	<id value="atc" />
+	<url value="http://fhir.de/CodeSystem/dimdi/atc" />
+	<name value="Atc" />
+	<status value="draft" />
+	<experimental value="true" />
+	<date value="2019-12-14" />
+	<publisher value="HL7 Deutschland e.V. (Technisches Komitee FHIR)" />
+	<contact>
+		<telecom>
+			<system value="other" />
+			<value value="http://hl7.de/technische-komitees/fhir/" />
+		</telecom>
+	</contact>
+	<description value="ATC Platzhalter-CodeSystem" />
+	<copyright value="DIMDI - Deutsches Institut für Medizinische Dokumentation und Information" />
+	<caseSensitive value="true" />
+	<content value="not-present" />
+	<!-- <content value="complete" />
+	<concept>
+		<code value="J07BL" />
+		<display value="Gelbfieber-Impfstoffe" />
+	</concept>
+	<concept>
+		<code value="J06BB16" />
+		<display value="Palivizumab" />
+	</concept>
+	<concept>
+		<code value="J06BB21" />
+		<display value="Bezlotoxumab" />
+	</concept>
+	<concept>
+		<code value="J07BD52" />
+		<display value="Masern, Kombinationen mit Mumps und Röteln, lebend abgeschwächt" />
+	</concept>
+	<concept>
+		<code value="J07CA09" />
+		<display value="Diphtherie-Haemophilus influenzae B-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+	</concept>
+	<concept>
+		<code value="J07AC01" />
+		<display value="Milzbrand-Impfstoffe" />
+	</concept>
+	<concept>
+		<code value="J07BG" />
+		<display value="Vaccine product containing Rabies lyssavirus antigen (medicinal product)" />
+	</concept>
+	<concept>
+		<code value="J07CA02" />
+		<display value="Diphtheria + tetanus + pertussis + poliomyelitis vaccine (product)" />
+	</concept>
+	<concept>
+		<code value="J07AM51" />
+		<display value="Tetanus-Toxoid, Kombinationen mit Diphtherie-Toxoid" />
+	</concept>
+	<concept>
+		<code value="J07AK" />
+		<display value="Pest-Impfstoffe" />
+	</concept>
+	<concept>
+		<code value="J07BX01" />
+		<display value="Pocken-Impfstoff, lebend, modifiziert" />
+	</concept>
+	<concept>
+		<code value="J07AG53" />
+		<display value="Haemophilus influenzae B, Kombinationen mit Meningokokken C, konjugiert" />
+	</concept>
+	<concept>
+		<code value="J07BD" />
+		<display value="Masern-Impfstoffe" />
+	</concept>
+	<concept>
+		<code value="J07CA12" />
+		<display value="Diphtherie-Pertussis-Poliomyelitis-Tetanus-Hepatitis B" />
+	</concept>
+	<concept>
+		<code value="J07AG"/>
+		<display value="Haemophilus influenzae B-Impfstoffe"/>
+	</concept> -->
+</CodeSystem>

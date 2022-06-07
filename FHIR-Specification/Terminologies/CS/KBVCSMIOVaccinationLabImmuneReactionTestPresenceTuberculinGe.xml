@@ -1,0 +1,34 @@
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <url value="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Lab_ImmuneReaction_Test_Presence_Tuberculin_German" />
+  <version value="1.1.0" />
+  <name value="KBV_CS_MIO_Vaccination_Lab_ImmuneReaction_Test_Presence_Tuberculin_German" />
+  <title value="Tuberkulin-Test" />
+  <status value="active" />
+  <experimental value="false" />
+  <publisher value="Kassenärztliche Bundesvereinigung (KBV)" />
+  <contact>
+    <telecom>
+      <system value="url" />
+      <value value="http://www.kbv.de" />
+    </telecom>
+  </contact>
+  <description value="Dieses Codesystem enthält die Codes für deutsche Bezeichner für den Tuberkulin-Test." />
+  <caseSensitive value="true" />
+  <content value="complete" />
+  <concept>
+    <code value="TuberkuloseMendelMantouxTestpositiv" />
+    <display value="Tuberkulose - Mendel-Mantoux-Test positiv" />
+  </concept>
+  <concept>
+    <code value="TuberkuloseMendelMantouxTestnegativ" />
+    <display value="Tuberkulose - Mendel-Mantoux-Test negativ" />
+  </concept>
+  <concept>
+    <code value="TuberkuloseInterferongammaassaypositiv" />
+    <display value="Tuberkulose - Interferon gamma assay positiv" />
+  </concept>
+  <concept>
+    <code value="TuberkuloseInterferongammaassaynegativ" />
+    <display value="Tuberkulose - Interferon gamma assay negativ" />
+  </concept>
+</CodeSystem>
