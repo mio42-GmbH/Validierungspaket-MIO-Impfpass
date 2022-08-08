@@ -21,12 +21,12 @@ You can use the following command to validate the examples:
 
 REAL_EXAMPLE_1_KBV_PR_MIO_IM_Bundle:
 ```
-java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_1_KBV_PR_MIO_IM_Bundle -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification\StructureDefinitions\Profiles -ig .\FHIR-Specification\StructureDefinitions\Extensions -ig .\FHIR-Specification\Terminologies\VS -ig .\FHIR-Specification\Terminologies\CM -ig .\FHIR-Specification\Terminologies\CS
+java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_1_KBV_PR_MIO_IM_Bundle.xml -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification -recurse
 ```
 
 REAL_EXAMPLE_2_KBV_PR_MIO_IM_Bundle:
 ```
-java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_2_KBV_PR_MIO_IM_Bundle -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification\StructureDefinitions\Profiles -ig .\FHIR-Specification\StructureDefinitions\Extensions -ig .\FHIR-Specification\Terminologies\VS -ig .\FHIR-Specification\Terminologies\CM -ig .\FHIR-Specification\Terminologies\CS
+java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_2_KBV_PR_MIO_IM_Bundle.xml -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification -recurse
 ```
 
 Please note that a current version of Java is required (we would recommend the most recent one). 
@@ -58,12 +58,12 @@ Zur Validierung der Beispiele können Sie folgenden Aufruf verwenden:
 
 REAL_EXAMPLE_1_KBV_PR_MIO_IM_Bundle:
 ```
-java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_1_KBV_PR_MIO_IM_Bundle -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification\StructureDefinitions\Profiles -ig .\FHIR-Specification\StructureDefinitions\Extensions -ig .\FHIR-Specification\Terminologies\VS -ig .\FHIR-Specification\Terminologies\CM -ig .\FHIR-Specification\Terminologies\CS
+java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_1_KBV_PR_MIO_IM_Bundle.xml -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification -recurse
 ```
 
 REAL_EXAMPLE_2_KBV_PR_MIO_IM_Bundle:
 ```
-java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_2_KBV_PR_MIO_IM_Bundle -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification\StructureDefinitions\Profiles -ig .\FHIR-Specification\StructureDefinitions\Extensions -ig .\FHIR-Specification\Terminologies\VS -ig .\FHIR-Specification\Terminologies\CM -ig .\FHIR-Specification\Terminologies\CS
+java -jar validator_cli_5.3.9.jar .\Example\REAL_EXAMPLE_2_KBV_PR_MIO_IM_Bundle.xml -ig "hl7.fhir.core#4.0.1" -ig .\KBV-Base -ig .\HL7-Base-de -ig .\FHIR-Specification -recurse
 ```
 
 Weitere Voraussetzung ist eine aktuelle Java Version.
