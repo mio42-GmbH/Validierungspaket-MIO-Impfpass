@@ -1,0 +1,290 @@
+<Bundle xmlns="http://hl7.org/fhir">
+    <id value="4bd2af15-ad4b-4827-9118-16f03b7b1e31" />
+    <meta>
+        <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Bundle_Entry|1.1.0" />
+    </meta>
+    <identifier>
+        <system value ="urn:ietf:rfc:3986"/>
+        <value value ="urn:uuid:9e965088-91f4-4347-a932-98404b4a244f"/>
+    </identifier>
+    <type value="document"/>
+    <timestamp value="2022-08-03T12:17:02Z"/>
+    <entry>
+        <fullUrl value ="urn:uuid:1e234839-03a9-4b32-a2e7-9f58c53dc8a8"/>
+        <resource>
+            <Composition>
+                <id value="1e234839-03a9-4b32-a2e7-9f58c53dc8a8" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Composition_Addendum|1.1.0" />
+                </meta>
+                <text>
+                    <status value ="extensions"/>
+                    <div xmlns="http://www.w3.org/1999/xhtml">
+                        <h1>Composition</h1>
+                    </div>
+                </text>
+                <status value ="final"/>
+                <type>
+                    <coding>
+                        <system value="http://loinc.org" />
+                        <code value="11369-6" />
+                        <display value="History of Immunization Narrative"/>
+                    </coding>
+                </type>
+                <subject>
+                    <reference value ="urn:uuid:d884b9ff-540b-4f9c-a890-26490565a93f"/>
+                </subject>
+                <date value="2022-08-03"/>
+                <author>
+                    <reference value="urn:uuid:fc2cc4c0-5fc3-4076-8d38-c247bf208a45"/>
+                </author>
+                <title value="Impfass"/>
+                <section>
+                    <code>
+                        <coding>
+                            <system value="http://snomed.info/sct" />
+                            <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+                            <code value="713404003" />
+                            <display value="Vaccination given (situation)"/>
+                        </coding>
+                    </code>
+                    <entry>
+                        <reference value ="urn:uuid:c5f98da1-f213-4d2e-8c31-9e35bf105f43"/>
+                    </entry>
+                </section>
+            </Composition>
+    </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:d884b9ff-540b-4f9c-a890-26490565a93f"/>
+        <resource>
+            <Patient>
+                <id value="d884b9ff-540b-4f9c-a890-26490565a93f" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Patient|1.1.0" />
+                </meta>
+                <identifier>
+                    <type>
+                        <coding>
+                            <system value="http://fhir.de/CodeSystem/identifier-type-de-basis" />
+                            <code value="GKV" />
+                        </coding>
+                    </type>
+                    <system value="http://fhir.de/NamingSystem/gkv/kvid-10" />
+                    <value value="P234567890" />
+                </identifier>
+                <name>
+                <use value="official" />
+                    <text value="Ludger Prinzenstein" />
+                    <family value="Prinzenstein">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                            <valueString value="Prinzenstein" />
+                        </extension>
+                    </family>
+                    <given value="Ludger" />
+                </name>
+                <gender value="male" />
+                <birthDate value="1953-04-22" />
+            </Patient>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value ="urn:uuid:0bc9b6c7-5462-4f3b-88ad-dbf0099f4819"/>
+        <resource>
+            <Practitioner>
+                <id value="0bc9b6c7-5462-4f3b-88ad-dbf0099f4819" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitioner|1.1.0" />
+                </meta>
+                <extension url="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Additional_Comment">
+                    <valueString value="Behandelnder Arzt" />
+                </extension>
+                <identifier>
+                    <type>
+                    <coding>
+                        <system value="http://terminology.hl7.org/CodeSystem/v2-0203" />
+                        <code value="LANR" />
+                    </coding>
+                    </type>
+                    <system value="https://fhir.kbv.de/NamingSystem/KBV_NS_Base_ANR" />
+                    <value value="838382202" />
+                </identifier>
+                <name>
+                    <use value="official" />
+                    <family value="Topp-Glücklich">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/humanname-own-name">
+                        <valueString value="Topp-Glücklich" />
+                    </extension>
+                    </family>
+                    <given value="Hans" />
+                    <prefix value="Dr. med.">
+                    <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-EN-qualifier">
+                        <valueCode value="AC" />
+                    </extension>
+                    </prefix>
+                </name>
+                <telecom>
+                    <system value="phone" />
+                    <value value="06151/1111111" />
+                </telecom>
+                <qualification>
+                    <code>
+                    <coding>
+                        <system value="https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BAR2_WBO" />
+                        <code value="010" />
+                        <display value="FA Allgemeinmedizin"/>
+                    </coding>
+                    </code>
+                </qualification>
+            </Practitioner>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value="urn:uuid:63fbeb23-5acc-4771-aa64-96a0054cbced"/>
+        <resource>
+            <Organization xmlns="http://hl7.org/fhir">
+                <id value="63fbeb23-5acc-4771-aa64-96a0054cbced" />
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Organization|1.1.0" />
+                </meta>
+                <name value="Praxis Dr. med. Hans Topp-Glücklich" />
+                <address>
+                    <type value="both" />
+                    <line value="Musterstr. 1">
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+                            <valueString value="1" />
+                        </extension>
+                        <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+                            <valueString value="Musterstr." />
+                        </extension>
+                    </line>
+                    <city value="Darmstadt" />
+                    <postalCode value="64283" />
+                    <country value="D" />
+                </address>
+            </Organization>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value ="urn:uuid:fc2cc4c0-5fc3-4076-8d38-c247bf208a45"/>
+        <resource>
+            <PractitionerRole>
+                <id value="fc2cc4c0-5fc3-4076-8d38-c247bf208a45" />
+                <meta>
+                  <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Practitionerrole|1.1.0" />
+                </meta>
+                <practitioner>
+                  <reference value="urn:uuid:0bc9b6c7-5462-4f3b-88ad-dbf0099f4819" />
+                </practitioner>
+                <organization>
+                  <reference value="urn:uuid:63fbeb23-5acc-4771-aa64-96a0054cbced" />
+                </organization>
+              </PractitionerRole>
+        </resource>
+    </entry>
+    <entry>
+        <fullUrl value ="urn:uuid:c5f98da1-f213-4d2e-8c31-9e35bf105f43"/>
+        <resource>
+            <Immunization>
+                <id value="c5f98da1-f213-4d2e-8c31-9e35bf105f43"/>
+                <meta>
+                    <profile value="https://fhir.kbv.de/StructureDefinition/KBV_PR_MIO_Vaccination_Record_Addendum|1.1.0"/>
+                </meta>
+                <extension url ="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Entry_Type">
+                    <valueCodeableConcept>
+                        <coding>
+                            <system value ="https://fhir.kbv.de/CodeSystem/KBV_CS_MIO_Vaccination_Technical_Entry_Type"/>
+                            <code value ="Eduii"/>
+                            <display value ="Eintrag digital und im Impfausweis"/>
+                        </coding>
+                    </valueCodeableConcept>
+                </extension>
+                <extension url ="https://fhir.kbv.de/StructureDefinition/KBV_EX_MIO_Vaccination_Enterer">
+                    <extension url= "mode">
+                        <valueCodeableConcept>
+                            <coding>
+                                <system value ="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+                                <code value ="ENT"/>
+                            </coding>
+                        </valueCodeableConcept>
+                    </extension>
+                    <extension url ="party">
+                        <valueReference>
+                            <reference value ="urn:uuid:fc2cc4c0-5fc3-4076-8d38-c247bf208a45"/>
+                        </valueReference>
+                    </extension>
+                </extension>
+                <status value="completed"/>
+                <vaccineCode>    
+                    <coding>
+                        <system value ="http://snomed.info/sct"/>
+                        <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+                        <code value ="1119349007"/>
+                        <display value ="Vaccine product containing only Severe acute respiratory syndrome coronavirus 2 messenger ribonucleic acid (medicinal product)">
+                            <extension url ="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                <extension url ="content">
+                                    <valueString value ="Covid-19-Impfstoff"/>
+                                </extension>
+                            </extension>
+                        </display>         
+                    </coding>
+                    <coding>
+                        <system value ="http://fhir.de/CodeSystem/dimdi/atc"/>
+                        <version value="atcgm2021" />
+                        <code value ="J07BX03"/>
+                        <display value ="Covid-19-Impfstoffe"/>
+                    </coding>
+                    <coding>
+                        <system value ="http://fhir.de/CodeSystem/ifa/pzn"/>
+                        <code value ="17377602"/>
+                        <display value ="Covid-19-Impfstoffe"/>
+                    </coding>
+                    <text value ="COVID-19 Vaccine Moderna"/>
+                </vaccineCode>
+                <patient>
+                    <reference value = "urn:uuid:d884b9ff-540b-4f9c-a890-26490565a93f"/>
+                </patient>
+                <occurrenceDateTime value ="2021-06-11"/>
+                <primarySource value ="false"/>
+                <reportOrigin>
+                    <coding>
+                        <system value ="http://terminology.hl7.org/CodeSystem/immunization-origin"/>
+                        <version value="3.5.0" />
+                        <code value ="record"/>
+                        <display value ="Written Record"/>
+                    </coding>
+                    <text value ="Schriftliche Dokumentation"/>
+                </reportOrigin>
+                <manufacturer>
+                    <display value ="Moderna Biotech Spain, S.L."/>
+                </manufacturer>
+                <lotNumber value ="3M567"/>
+                <note>
+                    <text value ="Keine relevanten Impfreaktionen erfolgt, nur Schmerzen an der Einstichstelle.
+                    Aufklärung zum heterologen Impfschema ist erfolgt – keine Einwände"/>
+                </note>
+                <protocolApplied>
+                    <targetDisease>
+                        <coding>
+                            <system value ="http://snomed.info/sct"/>
+                            <version value="http://snomed.info/sct/900000000000207008/version/20210131" />
+                            <code value ="840539006"/>
+                            <display value ="Disease caused by Severe acute respiratory syndrome coronavirus 2 (disorder)">
+                                <extension url ="https://fhir.kbv.de/StructureDefinition/KBV_EX_Base_Terminology_German">
+                                    <extension url ="content">
+                                        <valueString value ="COVID-19 o.n.A."/>
+                                    </extension>
+                                </extension>
+                            </display>         
+                        </coding>
+                    </targetDisease>
+                    <doseNumberString>
+                        <extension url ="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+                            <valueCode value ="unknown"/>
+                        </extension>
+                    </doseNumberString>
+                </protocolApplied>
+            </Immunization>
+        </resource>
+    </entry>
+</Bundle>
